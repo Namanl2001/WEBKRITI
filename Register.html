@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+</head>
+<body>
+	<h3>Sign Up</h3>
+	<form>
+		<label for="firstname">First name :</label>
+		<input id="firstname"type="text" name="fn" placeholder="Naman" required>
+		<label for="lastname">Last name : </label>
+		<input id="lastname"type="text" name="ln" placeholder="lastname" required>	
+		<div>
+		<label for="gender">Gender : </label>
+		<input type="radio" name="gender" value="Male" checked>Male
+		<input type="radio" name="gender" value="Female" required> Female
+
+		<div>
+		<label >
+			Date Of Birth : 
+			<select name="day" >
+				<option >Day</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<select name="month">
+				<option>Month</option>
+				<option>Jan</option>
+				<option>Feb</option>
+				<option>Mar</option>
+			</select>
+			<select name="year">
+				<option>Year</option>
+				<option>2000</option>
+				<option>2001</option>
+				<option>2002</option>
+			</select>
+		 </label>
+	
+		</div>
+
+		</div>
+		<label for="email">Email : </label>
+		<input id="email" type="email" name="email" placeholder="abcd@gmail.com" required>
+		<label for="pass">Password : </label>
+		<input id="pass" type="password" name="pass" placeholder="123456" pattern=".{5,8}" required title="enter the password between 5 and 8 characters"required><br>
+		<label for="tnc">I have accepted the terms and conditions</label>
+		<input id="tnc"type="checkbox" name="agree" required><br>
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>
