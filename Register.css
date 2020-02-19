@@ -10,8 +10,8 @@ body{
 }
 .registrationbox{
     text-align: start;
-    background:aquamarine;
-    
+    background:lightsteelblue;
+
     width: 30%;
     height: 900px;
     top: 65%;
@@ -26,8 +26,8 @@ body{
     margin-bottom: 30px;
     font-size: 23px;
     color: black;
-    border-width: 2px;
-    border-style: groove;
+    border-width: 5px;
+    border-style: ridge;
     border-color: black;
     font-weight: bolder;
 }
@@ -50,4 +50,7 @@ body{
 	cursor: pointer;
 	background: #ffc107;
 	color: #000;
+}
+.registrationbox ::placeholder{
+    color: gray;
 }
