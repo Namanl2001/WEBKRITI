@@ -9,42 +9,43 @@
 	<h1 style="text-align:center";>SIGN UP</h1>
 	<form>
 		<label for="firstname">First name :</label>
-		<input id="firstname"type="text" name="fn" placeholder="Firstname" required autofocus><br><br>
+		<input id="firstname"type="text" name="fn" placeholder="First Name" required autofocus><br><br>
 		<label for="lastname">Last name : </label>
-		<input id="lastname"type="text" name="ln" placeholder="Lastname" required>	
+		<input id="lastname"type="text" name="ln" placeholder="Last Name" required>	
 		<div><br>
 		<label for="gender">Gender : </label>
-		<input type="radio" name="gender" value="Male" checked>Male
-		<input type="radio" name="gender" value="Female" required> Female
+		<input  type="radio" name="gender" value="Male" checked><span class="radio">Male</span>
+		<input type="radio"  name="gender" value="Female" required> <span class="radio">Female</span>
+		<div>
 
-		<div><br>
+			<br>
 		<label >
-			Date Of Birth : 
-			<select  aria-label="Day" name="birthday_day" id="day" title="Day"><option value="0"selected="1">Day</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19" >19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+			DoB : 
+			<select  class="size1" aria-label="Day" name="birthday_day" id="day" title="Day"><option value="0"selected="1">Day</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19" >19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
 
-			<select class="_5dba _8esg" aria-label="Month" name="birthday_month" id="month" title="Month"><option value="0"selected="1">Month</option><option value="1">Jan</option><option value="2" >Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sept</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select>
+			<select class="size1" aria-label="Month" name="birthday_month" id="month" title="Month"><option value="0"selected="1">Month</option><option value="1">Jan</option><option value="2" >Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sept</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select>
 			
-			<select class="_5dba _8esg" aria-label="Year" name="birthday_year" id="year" title="Year"><option value="0">Year</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option></select>
+			<select class="size1" aria-label="Year" name="birthday_year" id="year" title="Year"><option value="0">Year</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option></select>
 		 </label>
 	
 		
 
 		</div><br>
 		<label for="phone">Contact No. : </label>
-		<input type="text" name="contact" pattern="[0-9]{10}" title="10 digit Contact No." placeholder="1234567890" required><br><br>
-		<label for="email">Email : </label>
+		<input type="text" name="contact" pattern="[0-9]{10}" title="10 digit Contact No." placeholder="0123456789" required><br><br>
+		<label for="email">Email id: </label>
 		<input id="email" type="email" name="email" placeholder="abcd@gmail.com" required><br><br>
 		<label for="pass">Password : </label>
 		<input id="pass" type="password" name="pass" placeholder="123456" pattern=".{5,8}" required title="enter the password between 5 and 8 characters"required><br><br>
 
 		
 
-		<input id="tnc"type="checkbox" name="agree" required>
-		<label for="tnc">I have accepted the terms and conditions</label><br><br>
+		<input class="cb"type="checkbox" name="agree" required>
+		<label id="tnc" for="tnc">I have accepted the terms and conditions.</label><br><br>
 		<div size="20px" id="mod">
 
-		<input type="submit" name="submit">
-		<input type="reset" ></div>
+		<input type="submit" name="submit" class="size">
+		<input type="reset" class="size" ></div>
 	</form>
 	</div>
 </body>

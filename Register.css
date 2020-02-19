@@ -29,7 +29,7 @@ body{
     border-width: 5px;
     border-style: ridge;
     border-color: black;
-    font-weight: bolder;
+    font-weight: bold;
 }
 #mod{
     align-self: center;
@@ -51,19 +51,38 @@ body{
 	background: #ff0f07;
 	color: #000;
 }
+.radio{
+    font-size: 17.5px;
+}
 .registrationbox ::placeholder{
     color: gray;
 }
 /*changin the font-size of term and condition line*/
 #tnc{   
-font-size: 18px;
+font-size: 17.5px;
 }
 /*changin th size of checkbox*/
 input.cb {
     width : 20px;
     height : 20px;
 }
-
-.registrationbox ::placeholder{
-    color: gray;
+/*size of buttons*/
+.size{
+    height :2em;
+    width : 8em;
+    background: transparent;
+   border: 2px solid black;
+   font-weight: 600;
+   border-radius: 80px;
+   outline : none;
+}
+/*size of dob buttons*/
+.size1{
+   height :2em;
+    width : 5em;
+    background: transparent;
+   border: 2px solid black;
+   font-weight: 600;
+   border-radius: 90px; 
+   outline : none;
 }
