@@ -2,23 +2,46 @@ body{
     background: url('5.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    font-family: sans-serif;
+    
 }
 .registrationbox{
-    background: lightblue;
-    width: 35%;
-    height: 85%;
-    top: 50%;
+    text-align: justify;
+    background:aquamarine;
+    
+    width: 30%;
+    height: 650px;
+    top: 65%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     padding: 40px 30px;
     box-sizing: border-box;
-    border-top-left-radius: 100px;
-    border-bottom-right-radius:100px ;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px ;
+    min-width: 350px;
+    margin-bottom: 30px;
+    font-size: 23px;
+    color: black;
+    border-width: 2px;
+    border-style: groove;
+    border-color: black;
+    
 }
 #mod{
     align-self: center;
     padding-left: 30%;
+}
+.registrationbox input{
+   
+    border-radius: 20px;
+}
+.registrationbox input[type="submit"]:hover,input[type="reset"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
 }
