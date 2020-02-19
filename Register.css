@@ -33,7 +33,7 @@ body{
 }
 #mod{
     align-self: center;
-    padding-left: 30%;
+    padding-left: 20%;
 }
 .registrationbox input[type="text"],input[type="email"],input[type="password"]{
    width: 100%;
