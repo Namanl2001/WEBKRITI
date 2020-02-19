@@ -8,15 +8,8 @@
 	<div class="registrationbox">
 	<h1 style="text-align:center";>SIGN UP</h1>
 	<form>
-		<label for="firstname">First name :</label>
-		<input id="firstname"type="text" name="fn" placeholder="First Name" required autofocus><br><br>
-		<label for="lastname">Last name : </label>
-		<input id="lastname"type="text" name="ln" placeholder="Last Name" required>	
-		<div><br>
-		<label for="gender">Gender : </label>
-		<input  type="radio" name="gender" value="Male" checked><span class="radio">Male</span>
-		<input type="radio"  name="gender" value="Female" required> <span class="radio">Female</span>
-		<div>
+		<label for="fullname">Full name :</label>
+		<input id="fullname"type="text" name="fn" placeholder="Full Name" required autofocus><br>	
 
 			<br>
 		<label >
@@ -27,7 +20,12 @@
 			
 			<select class="size1" aria-label="Year" name="birthday_year" id="year" title="Year"><option value="0">Year</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option></select>
 		 </label>
-	
+		
+		<div><br>
+		<label for="gender">Gender : </label>
+		<input  type="radio" name="gender" value="Male" checked><span class="radio">Male</span>
+		<input type="radio"  name="gender" value="Female" required> <span class="radio">Female</span>
+		<div>
 		
 
 		</div><br>
@@ -35,6 +33,8 @@
 		<input type="text" name="contact" pattern="[0-9]{10}" title="10 digit Contact No." placeholder="0123456789" required><br><br>
 		<label for="email">Email id: </label>
 		<input id="email" type="email" name="email" placeholder="abcd@gmail.com" required><br><br>
+		<label for="username">Username : </label>
+		<input id="username"type="text" name="ln" placeholder="Username" required><br><br>
 		<label for="pass">Password : </label>
 		<input id="pass" type="password" name="pass" placeholder="123456" pattern=".{5,8}" required title="enter the password between 5 and 8 characters"required><br><br>
 
