@@ -17,8 +17,7 @@ body{
   transform: translate(-50%,-50%);
   background:lightsteelblue;
   text-align: center;
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 100px ;
+  border-radius: 80px;
   border-width: 5px;
   border-style: ridge;
   border-color: black;
