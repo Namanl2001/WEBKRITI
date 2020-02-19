@@ -1,8 +1,12 @@
 body{
-  margin: 0;
-  padding: 0;
+  background: url('5.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
   font-family: sans-serif;
-  background: #34495e;
+  
 }
 .box{
   width: 300px;
@@ -11,8 +15,13 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background: #191919;
+  background:lightsteelblue;
   text-align: center;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px ;
+  border-width: 5px;
+  border-style: ridge;
+  border-color: black;
 }
 .box h1{
   color: white;
@@ -29,7 +38,7 @@ body{
   padding: 14px 10px;
   width: 200px;
   outline: none;
-  color: white;
+  color: black;
   border-radius: 24px;
   transition: 0.25s;
 }
@@ -46,7 +55,7 @@ body{
   border: 2px solid #2ecc71;
   padding: 14px 40px;
   outline: none;
-  color: white;
+  color: black;
   border-radius: 24px;
   transition: 0.25s;
   cursor: pointer;
