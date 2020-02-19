@@ -54,3 +54,16 @@ body{
 .registrationbox ::placeholder{
     color: gray;
 }
+/*changin the font-size of term and condition line*/
+#tnc{   
+font-size: 18px;
+}
+/*changin th size of checkbox*/
+input.cb {
+    width : 20px;
+    height : 20px;
+}
+
+.registrationbox ::placeholder{
+    color: gray;
+}
