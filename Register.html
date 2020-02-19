@@ -2,15 +2,16 @@
 <html>
 <head>
 <title>Registration</title>
-<link rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="Register.css">
 </head>
 <body>
+	<div class="registrationbox">
 	<h3>Sign Up</h3>
 	<form>
 		<label for="firstname">First name :</label>
-		<input id="firstname"type="text" name="fn" placeholder="Naman" required autofocus>
+		<input id="firstname"type="text" name="fn" placeholder="Firstname" required autofocus><br><br>
 		<label for="lastname">Last name : </label>
-		<input id="lastname"type="text" name="ln" placeholder="lastname" required>	
+		<input id="lastname"type="text" name="ln" placeholder="Lastname" required>	
 		<div><br>
 		<label for="gender">Gender : </label>
 		<input type="radio" name="gender" value="Male" checked>Male
@@ -39,19 +40,21 @@
 			</select>
 		 </label>
 	
-		</div>
+		
 
 		</div><br>
 		<label for="phone">Contact No. : </label>
 		<input type="text" name="contact" pattern="[0-9]{10}" title="10 digit Contact No." required><br><br>
 		<label for="email">Email : </label>
-		<input id="email" type="email" name="email" placeholder="abcd@gmail.com" required>
+		<input id="email" type="email" name="email" placeholder="abcd@gmail.com" required><br><br>
 		<label for="pass">Password : </label>
 		<input id="pass" type="password" name="pass" placeholder="123456" pattern=".{5,8}" required title="enter the password between 5 and 8 characters"required><br><br>
-		<label for="tnc">I have accepted the terms and conditions</label>
-		<input id="tnc"type="checkbox" name="agree" required><br><br>
+		<input id="tnc"type="checkbox" name="agree" required>
+		<label for="tnc">I have accepted the terms and conditions</label><br><br>
+		<div id="mod">
 		<input type="submit" name="submit">
-		<input type="reset" >
+		<input type="reset" ></div>
 	</form>
+	</div>
 </body>
 </html>
