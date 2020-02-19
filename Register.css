@@ -1,5 +1,5 @@
 body{
-    background: url('5.jpg');
+    background: url('photos/planet-702177_1920.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,8 +10,7 @@ body{
 }
 .registrationbox{
     text-align: start;
-    background:lightsteelblue;
-
+    background: black;
     width: 30%;
     height: 900px;
     top: 65%;
@@ -25,24 +24,25 @@ body{
     min-width: 350px;
     margin-bottom: 30px;
     font-size: 23px;
-    color: black;
+    color: white;
     border-width: 5px;
     border-style: ridge;
-    border-color: black;
+    border-color:rgb(46,122,120);
     font-weight: bold;
 }
 #mod{
     align-self: center;
-    padding-left: 20%;
+    padding-left: 1%;
 }
 .registrationbox input[type="text"],input[type="email"],input[type="password"]{
    width: 100%;
    border: none;
-   border-bottom: 1px solid black;
+   border-bottom: 1px solid white;
    background: transparent;
+   padding-left: 5px;
    outline: none;
    height: 40px;
-   color:black;
+   color:#1a8cff;
    font-size: 16px;
 }
 .registrationbox input[type="submit"]:hover,input[type="reset"]:hover
@@ -67,22 +67,31 @@ input.cb {
 }
 /*size of buttons*/
 .size{
-    height :2em;
-    width : 8em;
+    height :4em;
+    width : 14em;
     background: transparent;
    border: 2px solid #6666ff;
    font-weight: 600;
    border-radius: 80px;
    outline : none;
-
+  color : white;
 }
 /*size of dob buttons*/
 .size1{
    height :2em;
     width : 5em;
     background: transparent;
-   border: 1.2px solid black;
+   border: 1.2px solid white;
    font-weight: 600;
    border-radius: 90px; 
    outline : none;
+   color:#1a8cff;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px black inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #1a8cff;
+}
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px white inset;
+    -webkit-text-fill-color: #1a8cff;
 }

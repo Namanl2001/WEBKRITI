@@ -1,5 +1,5 @@
 body{
-  background: url('5.jpg');
+  background: url('photos/planet-702177_1920.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -15,12 +15,13 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background:lightsteelblue;
+  /*background:lightsteelblue;*/
+  background:black;
   text-align: center;
   border-radius: 80px;
   border-width: 5px;
   border-style: ridge;
-  border-color: black;
+  border-color:rgb(46,122,120); 
 }
 .box h1{
   color: white;
@@ -37,9 +38,9 @@ body{
   padding: 14px 10px;
   width: 200px;
   outline: none;
-  color: black;
+  color: #1a8cff;
   border-radius: 24px;
-  transition: 0.25s;
+  transition: 0.30s;
 }
 .box input[type = "text"]:focus,.box input[type = "password"]:focus{
   width: 280px;
@@ -54,7 +55,7 @@ body{
   border: 2px solid #2ecc71;
   padding: 14px 40px;
   outline: none;
-  color: black;
+  color: white;
   border-radius: 24px;
   transition: 0.25s;
   cursor: pointer;
