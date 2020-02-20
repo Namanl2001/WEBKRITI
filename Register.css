@@ -26,7 +26,7 @@ body{
     font-size: 23px;
     color: white;
     border-width: 5px;
-    border-style: ridge;
+    border-style: double;
     border-color:rgb(46,122,120);
     font-weight: bold;
 }
