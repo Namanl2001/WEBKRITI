@@ -20,7 +20,7 @@ body{
   text-align: center;
   border-radius: 80px;
   border-width: 5px;
-  border-style: ridge;
+  border-style: double;
   border-color:rgb(46,122,120); 
 }
 .box h1{
