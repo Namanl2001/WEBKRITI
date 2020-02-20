@@ -3,11 +3,12 @@
 <head>
 <title>Registration</title>
 <link rel="stylesheet" type="text/css" href="Register.css">
+<script src="check.js"></script>
 </head>
 <body>
 	<div class="registrationbox">
 	<h1 style="text-align:center;font-family:cursive;";>SIGN UP</h1>
-	<form>
+	<form name="signup">
 			<label for="fullname">Full name :</label>
 			<input id="fullname"type="text" name="fn" placeholder="Full Name" required autofocus><br>
 			<br>
@@ -34,16 +35,19 @@
 		<input id="email" type="email" name="email" placeholder="abcd@gmail.com" required><br><br>
 		<label for="username">Username : </label>
 		<input id="username"type="text" name="ln" placeholder="Username" required><br><br>
-		<label for="pass">Password : </label>
-		<input id="pass" type="password" name="pass" placeholder="123456" pattern=".{5,8}" required title="enter the password between 5 and 8 characters"required><br><br>
 
-		
+		<label for="pass">Password : </label>
+		<input id="pass" type="password" name="pass" placeholder="Aa123456" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>
+
+		<label for="passch">Confirm Password : </label>
+		<input id="passch" type="password" name="passch" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Enter password ">
+		<br><br>
 
 		<input class="cb"type="checkbox" name="agree" required>
 		<label id="tnc" for="tnc">I have accepted the terms and conditions.</label><br><br>
 		<div size="20px" id="mod">
 
-		<input type="submit" name="submit" class="size">
+		<input type="submit" name="submit" class="size" onclick="checkpassword(),checkdate()">
 		<input type="reset" class="size" ></div>
 	</form>
 	</div>
