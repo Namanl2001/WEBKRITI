@@ -21,4 +21,8 @@ function checkdate()
 	alert("Select a valid date ");
 	else if (date==31&&(month==6||month==11||month==4||month==9))
 	alert("Select a valid date ");
+	else if(date==29&&month==2&&(year%4!=0))
+	alert("Select a valid date ");
+	else if(date==29&&month==2&&(year%4==0&&year%100==0&&year%400!=0))
+	alert("Select a valid date ");
 }
