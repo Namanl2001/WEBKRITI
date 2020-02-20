@@ -1,2 +1,0 @@
-# WEBKRITI
-web development
