@@ -1,0 +1,18 @@
+body{
+    background: url('photos/planet-702177_1920.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    font-family: sans-serif;
+    
+}
+.heading{
+    font-size: large;
+    font-family: sans-serif;
+    color: chartreuse;
+    align-self: center;
+    margin-left: 43%;
+    margin-right: 40%;
+}
