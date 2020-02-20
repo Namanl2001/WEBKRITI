@@ -12,8 +12,8 @@ body{
     text-align: start;
     background: black;
     width: 30%;
-    height: 900px;
-    top: 65%;
+    height: 1000px;
+    top: 75%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
