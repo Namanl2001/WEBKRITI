@@ -8,6 +8,7 @@ body{
   font-family: sans-serif;
   
 }
+
 .box{
   width: 300px;
   padding: 40px;
@@ -16,7 +17,7 @@ body{
   left: 50%;
   transform: translate(-50%,-50%);
   /*background:lightsteelblue;*/
-  background:black;
+  background:rgba(0,0,0,0.7);
   text-align: center;
   border-radius: 80px;
   border-width: 5px;
