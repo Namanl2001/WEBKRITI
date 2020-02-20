@@ -10,7 +10,7 @@ body{
 }
 .registrationbox{
     text-align: start;
-    background: black;
+    background:rgba(0,0,0,0.6);
     width: 30%;
     height: 1000px;
     top: 75%;
@@ -30,6 +30,7 @@ body{
     border-color:rgb(46,122,120);
     font-weight: bold;
 }
+
 #mod{
     align-self: center;
     padding-left: 1%;
