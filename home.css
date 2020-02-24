@@ -12,7 +12,7 @@ body{
     font-size: large;
     font-family: sans-serif;
     color: chartreuse;
-    align-self: center;
+    text-align: center;
     margin-left: 43%;
     margin-right: 40%;
 }
