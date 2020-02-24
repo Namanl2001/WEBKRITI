@@ -20,12 +20,15 @@ body{
     height :4em;
     width : 14em;
     background: transparent;
-   border: 2px solid #6666ff;
+   border: 2px solid rgb(46,122,120);
    font-weight: 600;
    border-radius: 80px;
    outline : none;
   color : white;
 }
 .size:hover{
+  background-color:rgb(46,122,120);
+  color:black;
     width: 16em;
+    transition:0.50s;
 }
