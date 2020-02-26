@@ -8,6 +8,10 @@ body{
     font-family: sans-serif;
     
 }
+@keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 .heading{
     font-size: large;
     font-family: sans-serif;
@@ -61,8 +65,7 @@ position: absolute;
  
   box-sizing: content-box;
   width: 60%;
- 
-
+  animation: mymove 4s;
 
 }
 
