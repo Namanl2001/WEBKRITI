@@ -45,6 +45,27 @@ right: 0;
 bottom: 0;
 position: absolute;
 }
+.header{
+  font-size: 07em;
+  color:rgb(77, 129, 228);
+  font-family:cursive;
+  box-sizing: border-box;
+  width: fit-content;
+  /* border: 5px double royalblue; */
+  /* border-radius: 50px; */
+
+}
+.content{
+  font-size:40px;
+  color:rgb(11, 252, 240);
+ 
+  box-sizing: content-box;
+  width: 60%;
+ 
+
+
+}
+
 .na{
   margin: 0 5px;
   
