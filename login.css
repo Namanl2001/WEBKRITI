@@ -23,7 +23,9 @@ body{
   border-width: 5px;
   border-style: double;
   border-color:rgb(46,122,120); 
+  
 }
+
 .box h1{
   color: white;
   text-transform: uppercase;
