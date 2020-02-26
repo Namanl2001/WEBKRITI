@@ -18,7 +18,7 @@ body{
 }
 .size{
     height :4em;
-    width : 14em;
+    width : 12em;
     background: transparent;
    border: 2px solid rgb(46,122,120);
    font-weight: 600;
@@ -29,6 +29,23 @@ body{
 .size:hover{
   background-color:rgb(46,122,120);
   color:black;
-    width: 16em;
+    /* width: 14em; */
     transition:0.50s;
+}
+#newuser{
+  margin: 30px;
+right: 0;
+top: 0;
+position: absolute;
+
+}
+#contacts{
+margin: 30px;
+right: 0;
+bottom: 0;
+position: absolute;
+}
+.na{
+  margin: 0 5px;
+  
 }
