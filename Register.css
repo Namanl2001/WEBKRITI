@@ -12,7 +12,7 @@ body{
     text-align: start;
     background:rgba(0,0,0,0.6);
     width: 30%;
-    height: 1050px;
+    height: 1000px;
     top: 75%;
     left: 50%;
     position: absolute;
@@ -97,14 +97,13 @@ input:-webkit-autofill:focus {
     -webkit-text-fill-color: #1a8cff;
 }
 #user{
-	width: 100px;
-	height:100px;
+	width: 150px;
+	height:150px;
 	border-radius:50%;
-	position:absolute;
+	position: absolute;
     top: 0px;
-    padding: 20px;
+    left:100px;
+	margin-top:5px;
+    align-self: center;
     
-	margin-top:10px;
-	   
-	align-self: center;
 }
