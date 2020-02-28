@@ -6,7 +6,7 @@ body{
     background-size: cover;
     height: 100%;
     font-family: sans-serif;
-    animation: mymove 4s ;
+    animation: mymove 1s ;
 }
 @keyframes mymove {
     from {opacity: 0;}
