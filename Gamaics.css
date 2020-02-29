@@ -17,10 +17,11 @@ body{
     font-size: 500%;
     font-weight: 600;
     font-family: cursive;
-    animation: mymove ease 5s infinite;
+    animation: mymove 1s infinite;
 }
 .button
     {
+        animation: mymove  1s infinite;
         border:0;
         background: none;
         display: block;
@@ -45,10 +46,30 @@ body{
     color: white
 }
 @keyframes mymove {
-    from{color: black}
-    to{color: white}
-    from{color:white}
-    to{color: black;}
+    0%{
+        transform: translateY(0vw);
+        color: black;
+    }
+    25%{
+        transform: translateY(1vw);
+    }
+    37.5%{
+        transform: translateY(0.5vw);
+    }
+    50%{
+        transform: translateY(1vw);
+        color: white;
+    }
+    62.5%{
+        transform: translateY(0.5vw);
+    }
+    75%{
+        transform: translateY(1vw);
+    }
+    100%{
+        transform: translateY(0vw);
+        color: black;
+    }
   }
 .Description{
     font-size: 12 px;
