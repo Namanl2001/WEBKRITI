@@ -11,9 +11,11 @@ body{
 }
 header{
     margin-left: 5vw;
-    font-size: 90px;
+    margin-right: 5vw;
+    font-size: 500%;
     font-weight: 600;
     font-family: cursive;
+    text-align: center;
     animation: mymove ease 5s infinite;
 }
 .button

@@ -10,13 +10,14 @@ body{
     margin-right: 20vw;
 }
 header{
-    padding-left: 33%;
+    padding-left: 25%;
     padding-top: 2%;
     padding-right: 45%;
     padding-bottom: 0%;
-    font-size: 90px;
+    font-size: 500%;
     font-weight: 600;
     font-family: cursive;
+    text-align: center;
     animation: mymove ease 5s infinite;
 }
 .button
