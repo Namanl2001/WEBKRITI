@@ -10,10 +10,7 @@ body{
     margin-right: 20vw;
 }
 header{
-    padding-left: 33%;
-    padding-top: 2%;
-    padding-right: 45%;
-    padding-bottom: 0%;
+    margin-left: 5vw;
     font-size: 90px;
     font-weight: 600;
     font-family: cursive;
@@ -45,11 +42,7 @@ header{
     from{color:white}
     to{color: black;}
   }
-  .Description{
-    font-size: 12 px;
-    font-family: cursive;
-    color: white;
-}
+
 h3{
     color: white;
     font-size: 24px;
@@ -67,6 +60,11 @@ li{
 }
 h5{
     color: white;
+    font-size: 24px;
+    font-family: cursive;
+}
+.quotes{
+    color: black;
     font-size: 24px;
     font-family: cursive;
 }

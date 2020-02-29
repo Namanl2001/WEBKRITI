@@ -1,15 +1,16 @@
 body{
+    background: fixed;
     background-attachment: fixed;
     background: linear-gradient(to top right, #ff9900 0%, #0066ff 120%);
     background: linear-gradient(to right, #333300 0%, #00ffff 125%);
     background-repeat: no-repeat;
     background-size: 100%;
     opacity: 100%;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
 #header{
-    padding-left: 33%;
+    padding-left: 25%;
     padding-top: 2%;
     padding-right: 45%;
     padding-bottom: 0%;

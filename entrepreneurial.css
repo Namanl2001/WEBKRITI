@@ -10,10 +10,8 @@ body{
     margin-right: 20vw;
 }
 header{
-    padding-left: 33%;
-    padding-top: 2%;
-    padding-right: 45%;
-    padding-bottom: 0%;
+    text-align: center;
+    margin-left: 0vw;
     font-size: 90px;
     font-weight: 600;
     font-family: cursive;
@@ -28,7 +26,6 @@ header{
         text-align: center;
         border: 2px solid #1ed169;
         padding: 14px 40px;
-        outline: none;
         color: white;
         border-radius: 24px;
         transition: 0.25s;
@@ -45,14 +42,10 @@ header{
     from{color:white}
     to{color: black;}
   }
-  .Description{
-    font-size: 12 px;
-    font-family: cursive;
-    color: white;
-}
+
 h3{
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     font-family: cursive;
 }
 p{
@@ -67,6 +60,11 @@ li{
 }
 h5{
     color: white;
+    font-size: 24px;
+    font-family: cursive;
+}
+.quotes{
+    color: black;
     font-size: 24px;
     font-family: cursive;
 }
