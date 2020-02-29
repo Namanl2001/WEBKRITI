@@ -1,0 +1,73 @@
+body{
+    background-attachment: fixed;
+    background: linear-gradient(to top right, #ff9900 0%, #0066ff 120%);
+    background: linear-gradient(to right, #333300 0%, #00ffff 125%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 100%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+header{
+    padding-left: 28%;
+    padding-top: 2%;
+    padding-right: 45%;
+    padding-bottom: 0%;
+    font-size: 90px;
+    font-weight: 600;
+    font-family: cursive;
+    animation: mymove ease 5s infinite;
+}
+.button
+    {
+        border:0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #1ed169;
+        padding: 14px 40px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+        cursor: pointer;
+      }
+
+.button:hover{
+    background-color: black;
+    color: white
+}
+@keyframes mymove {
+    from{color: black}
+    to{color: white}
+    from{color:white}
+    to{color: black;}
+  }
+.quotes{
+    font-size: 24 px;
+    font-weight: 400;
+    font-size: large;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+}
+h3{
+    color: white;
+    font-size: 24px;
+    font-family: cursive;
+}
+p{
+    font-size: 12 px;
+    font-family: cursive;
+    color: white;
+}
+li{
+    font-size: 12 px;
+    font-family: cursive;
+    color: white;
+}
+h5{
+    color: white;
+    font-size: 24px;
+    font-family: cursive;
+}
