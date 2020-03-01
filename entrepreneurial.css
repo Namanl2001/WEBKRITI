@@ -15,7 +15,7 @@ header{
     font-size: 500%;
     font-weight: 600;
     font-family: cursive;
-    animation: mymove ease 1s infinite;
+    animation: mymove 2s infinite;
 }
 .button
     {
@@ -30,7 +30,7 @@ header{
         border-radius: 24px;
         transition: 0.25s;
         cursor: pointer;
-        animation: mymove 1s infinite;
+        animation: mymove 2s infinite;
       }
 
 .button:hover{
@@ -43,20 +43,20 @@ header{
         color: black;
     }
     25%{
-        transform: translateY(1vw);
+        transform: translateY(-2vw);
     }
     37.5%{
-        transform: translateY(0.5vw);
+        transform: translateY(0vw);
     }
     50%{
-        transform: translateY(1vw);
+        transform: translateY(-1vw);
         color: white;
     }
     62.5%{
-        transform: translateY(0.5vw);
+        transform: translateY(0vw);
     }
     75%{
-        transform: translateY(1vw);
+        transform: translateY(0vw);
     }
     100%{
         transform: translateY(0vw);
@@ -64,6 +64,7 @@ header{
     }
   }
 h3{
+    animation: mymove 2s infinite;
     color: white;
     font-size: 28px;
     font-family: cursive;
