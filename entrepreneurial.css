@@ -17,7 +17,8 @@ header{
     font-family: cursive;
     animation: mymove 2s infinite;
 }
-.button
+/*
+.size
     {
         border:0;
         background: none;
@@ -33,10 +34,10 @@ header{
         animation: mymove 2s infinite;
       }
 
-.button:hover{
+.size:hover{
     background-color: black;
     color: white
-}
+}*/
 @keyframes mymove {
     0%{
         transform: translateY(0vw);
