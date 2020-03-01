@@ -84,6 +84,9 @@ position: absolute;
   width: 20%;
   height: 50%;
   display: none;
+ border: 10px double black;
+  
+  
   position: absolute;
    background: linear-gradient(to bottom right, #800000 0%, #0066ff 142%);
   /* background-color: rgba(0,0,0,1); */
@@ -400,17 +403,20 @@ input{
       transition:0.50s;
   }
   .hamburger {
-    margin-left: 30px;
+    margin-left: 20px;
     position: fixed;
   }
   
   .hamburger div {
     align-self: center;
+    align-items: center;
+    
     height: 10px;
     width: 60px;
     background-color: white;
+    border-radius: 5px;
     margin-top: 10px;
-    margin-left: 30px;
+    /* margin-left: 20px; */
     transition: all 5s ease;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
