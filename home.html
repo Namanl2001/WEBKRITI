@@ -15,7 +15,7 @@
 <a class="na"href="https://twitter.com/infotsav_iiitm?"target=_blank; ><img src="photos/twitter.png" width="50px" height="50px"></a>
 </div>
 <br><div id="newuser">
-	<a href="login.html"><button class="size">Login</button></a>
+	<a href="#" class="bitton" id="button"><button class="size">Login</button></a>
 
 <a href="Register.html"><button class="size">Sign Up</button></a>
 </div>
@@ -42,6 +42,24 @@
 	<div class="gear" id="gear6"></div>
 	<div class="gear" id="gear7"></div>
 </div>
-
+<div class="popup">
+	<div class="popup-content">
+		<img src="photos/close.png" alt="Close" class="close">
+		<img src="photos/user.png" alt="User" height="100px" width="100px" class="user">
+		<form action="" method="post">
+		<input type="text" placeholder="Username" name="username" required>
+		<input type="password" placeholder="Password" name="username" required>
+		<a href="#" type="submit"><button class="button">Login</button></a>
+	    </form>
+	</div>
+</div>
+<script>
+	document.getElementById("button").addEventListener("click",function(){
+		document.querySelector(".popup").style.display="flex";
+	})
+	document.querySelector(".close").addEventListener("click",function(){
+		document.querySelector(".popup").style.display="none";
+	})
+</script>
 </body>
 </html>
