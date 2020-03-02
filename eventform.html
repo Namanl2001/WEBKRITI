@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <meta charset="utf-8"  content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" type="text/css" href="eventform.css">
+</head>
+<body>
+    <div class="registrationbox">
+        <h1 style="text-align:center;font-family:cursive;";>Register Here</h1>
+    <form action="" method="post" id="register">
+        <label for="event">Event :     </label>
+    
+        <select name="event" id="event" class="size1">
+            <option value="entrepreneurial">Entrepreneurial Events</option>
+            <option value="gamiacs">Gamiacs</option>
+            <option value="robowars">Robowars</option>
+            <option value="softwarecorner">Software Corner</option>
+            <option value="technovation">Technovation</option>
+        </select>
+        <br>
+        <br>
+        <label for="college">College :</label>
+        <br>
+        <input type="text" name="college" placeholder="College Name" title="Enter Your College Name " id="college" required>
+        <br>
+        <br>
+        <label for="no_of_mem">Number of Members :</label>
+        <select name="no_of_mem" id="no_of_mem" title="Enter the number of team members " class="size2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <!-- <option value="5">5</option> -->
+        </select>
+        <br>
+        <br>
+        <label for="team_head">Team Head :</label>
+        <br>
+        <input type="text" id="team_head" placeholder=" Team Head " title="Enter Team Head's Name" required>
+        <br>
+        <br>
+        <label for="phone">Contact No. (Team Head) :</label>
+        <br>
+        <input id="phone"type="text" name="contact" pattern="[0-9]{10}" title="Enter Team Head contact number" placeholder="0123456789" required>
+        <br>
+        <br><br>
+        <input class="cb"type="checkbox" name="agree" required>
+		<label id="tnc" for="tnc">I have accepted the terms and conditions.</label><br><br>
+		<div size="20px" id="mod">
+        <input type="submit" name="submit" class="size" onclick="checkpassword(),checkdate()">
+		<input type="reset" class="size" >
+    </form>
+</div>
+</body>
+</html>
