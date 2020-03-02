@@ -32,7 +32,9 @@
 	<li><a href="events.html">EVENTS</a></li>
 	<li><a href="about.html">ABOUT</a></li>
 	<li><a href="contactus.html">CONTACT US</a></li>
-	<li><a href="sponsors.html>">SPONSORS</a></li></ul>
+	<li><a href="sponsors.html>">SPONSORS</a></li>
+	<li><a href="#">LOGIN</a></li>
+</ul>
 </div>
 <div class="cas">
 	
@@ -78,15 +80,15 @@
 		
 		x.style.display="block";
 		
-		line2.style.backgroundColor = "transparent";
-		line1.style.position = "fixed";
-		line2.style.position = "fixed";
-		line3.style.position = "fixed";
+		line1.style.backgroundColor = "transparent";
+		line1.style.position = "relative";
+		line2.style.position = "absolute";
+		line3.style.position = "absolute";
 		line1.style.width="60px";
 		line3.style.width="60px";
 		
-		line1.style.transform = "rotate(405deg)";
-		line3.style.transform = "rotate(-405deg)";
+		line3.style.transform = "rotate(405deg)";
+		line2.style.transform = "rotate(-405deg)";
 
 		}
 		else {
