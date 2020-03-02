@@ -1,0 +1,108 @@
+body{
+    background: url('photos/planet-702177_1920.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    font-family: sans-serif;
+    animation: mymove 1s ;
+}
+#mod{
+    align-self: center;
+    padding-left: 1%;
+}
+#tnc{   
+    font-size: 17.5px;
+    }
+        /*changin th size of checkbox*/
+        input.cb {
+            width : 20px;
+            height : 20px;
+        }
+        
+@keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  .registrationbox{
+    text-align: start;
+    background:rgba(0,0,0,0.6);
+    width: 30%;
+    height: 800px;
+    top: 65%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 40px 30px;
+    box-sizing: border-box;
+    border-radius: 80px;
+    
+    min-width: 350px;
+    margin-bottom: 50px;
+    font-size: 23px;
+    color: white;
+    border-width: 5px;
+    border-style: double;
+    border-color:rgb(46,122,120);
+    font-weight: bold;
+}
+.registrationbox input[type="text"]{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    padding-left: 5px;
+    outline: none;
+    height: 40px;
+    color:#1a8cff;
+    font-size: 16px;
+ }
+ .registrationbox input[type="submit"]:hover,input[type="reset"]:hover
+{
+	cursor: pointer;
+	background: #6666ff;
+}
+.registrationbox ::placeholder{
+    color: gray;
+}
+.size{
+    height :4em;
+    width : 14em;
+    background: transparent;
+   border: 2px solid #6666ff;
+   font-weight: 600;
+   border-radius: 80px;
+   outline : none;
+  color : white;
+}
+.size1{
+    height :2em;
+     width : 5em;
+     background: transparent;
+    border: 1.2px solid white;
+    font-weight: 600;
+    border-radius: 90px; 
+    outline : none;
+    color:#1a8cff;
+ }
+ input:-webkit-autofill {
+     -webkit-box-shadow:0 0 0 50px black inset; /* Change the color to your own background color */
+     -webkit-text-fill-color: #1a8cff;
+ }
+ input:-webkit-autofill:focus {
+     -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px white inset;
+     -webkit-text-fill-color: #1a8cff;
+ }
+ #user{
+     width: 150px;
+     height:150px;
+     border-radius:50%;
+     position: absolute;
+     top: 0px;
+     left:100px;
+     margin-top:5px;
+     align-self: center;
+     
+ }
+ 

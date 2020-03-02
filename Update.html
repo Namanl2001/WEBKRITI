@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Password</title>
+    <meta charset="utf-8"  content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" type="text/css" href="Update.css">
+</head>
+<body>
+<div class="registrationbox">
+    <!-- <div ><img src="photos/user.png" id="user">	 -->
+<h1 style="text-align:center;font-family:cursive;";>Forgot Password</h1>
+    <form action="" method="post">
+        <label for="email">Email :</label>
+        <input type="email" title="Enter your email" placeholder="abcd@gmail.com" name="email" id="email" required>
+        <br>
+        <br>
+        <label for="pass">Enter Password :</label>
+        <input type="password" name="password" id="pass" title="Enter New Password " placeholder="Aa123456" required>
+        <br>
+        <br>
+        <label for="cnf">Confirm Password</label>
+        <input type="password" name="cnfpassword" id="cnf" title="Re Enter Password" placeholder="Aa123456" required>
+        <br>
+        <br>
+        <br>
+        <input type="submit" name="submit" class="size" onclick="checkpassword()">
+    </form>
+</body>
+</html>
+<script>
+    function checkpassword(){
+    var pass=document.getElementById("pass").value;
+    var passch=document.getElementById("cnf").value;
+    if(pass!=passch)
+    {
+        alert("Password and Confirm Passwords do not match ");
+    }}
+</script>
