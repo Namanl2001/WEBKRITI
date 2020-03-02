@@ -8,8 +8,67 @@
         <link rel="stylesheet" type="text/css" href="events.css">
     </head>
     <body>
-        
+        <div class="hamburger" onclick="myFunction()">
+            <div id="line1"></div>
+                  <div id="line2"></div>
+                  <div id="line3"></div>
+                </div>
+                <div id="boxz" >
+                    <ul>
+                        <li ><a href="home.html" class="active">HOME</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li><a href="sponsors.html>">SPONSORS</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                </ul>
+                </div>
+        <div class="container">
+            <div id="it1"><img src="photos/bigstock-Programming-Web-Banner-Best-P-258081862.jpg" class="image"><h2>TECHNOVATION</h2><div id="ol1"></div></div>
+            <div id="it2"><img src="photos/robogames_16x9-3.jpg" class="image"><h2>ROBOWARS</h2><div id="ol2"></div></div>
+            <div id="it3"><img src="photos/41862409-global-people-discussion-meeting-creativity-ideas-concept.jpg" class="image"><h2>ENTREPRENURSHIP</h2><div id="ol3"></div></div>
+            <div id="it4"><img src="photos/artificial-intelligence-future-of-programming.jpg" class="image"><h2>SOFTWARE CORNER</h2><div id="ol4"></div></div>
+            <div style="width: 100%;" id="it5"><img src="photos/1409486.jpg" class="image"><h2>GAMIACS</h2><div id="ol5"></div></div>
+        </div>
+            
+<script>
+    var myFunction = () => {
+        var x=document.getElementById("boxz");
+		var line1 = document.getElementById("line1");
+		var line2 = document.getElementById("line2");
+		var line3 = document.getElementById("line3");
+		if(x.style.display=="none")
+		{
+		
+		
+		x.style.display="block";
+		
+		line1.style.backgroundColor = "transparent";
+		line1.style.position = "relative";
+		line2.style.position = "absolute";
+		line3.style.position = "absolute";
+		line1.style.width="60px";
+		line3.style.width="60px";
+		
+		line3.style.transform = "rotate(405deg)";
+		line2.style.transform = "rotate(-405deg)";
 
+		}
+		else {
+			line1.style= "hamburger div";
+		line2.style= "hamburger div";
+		line3.style= "hamburger div";
+			
+			
+		x.style.display="none";
+		
+		
+
+		} 
+		
+	  };
+	
+</script>
     </body>
     </html>
 
