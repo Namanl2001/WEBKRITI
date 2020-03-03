@@ -6,12 +6,29 @@
 	<link rel="stylesheet" href="Gamaics.css">
 </head>
 <body>
-	<header id='header'>Gamiacs</header>
+	<div class="hamburger" onclick="myFunction()">
+		<div id="line1"></div>
+			  <div id="line2"></div>
+			  <div id="line3"></div>
+			</div>
+	<div class="content">
+	<h1 id='header'>Gamiacs</h1>
 	<br>
 	<br>
 	<br>
 	<br>
 	<br>
+	
+			<div id="boxz" >
+				<ul>
+					<li ><a href="home.html" >HOME</a></li>
+				<li><a href="events.html" >EVENTS</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contactus.html">CONTACT US</a></li>
+				<li><a href="sponsors.html>">SPONSORS</a></li>
+				<li><a href="#">LOGIN</a></li>
+			</ul>
+			</div>
 	<div id="text">
 		Think you have what it takes? Infotsav presents Gamiacs events where you can showcase you skills in games like CS-GO and PUBG.
 	</div>
@@ -100,5 +117,45 @@
 	<a href="eventform.html" style="text-decoration: none;"><button class="button"><strong>Register Now</strong></button></a>
 	<br>
 	<br>
+	</div>
+	<script>
+		var myFunction = () => {
+			var x=document.getElementById("boxz");
+			var line1 = document.getElementById("line1");
+			var line2 = document.getElementById("line2");
+			var line3 = document.getElementById("line3");
+			if(x.style.display=="none")
+			{
+			
+			
+			x.style.display="block";
+			
+			line1.style.backgroundColor = "transparent";
+			line1.style.position = "relative";
+			line2.style.position = "absolute";
+			line3.style.position = "absolute";
+			line1.style.width="60px";
+			line3.style.width="60px";
+			
+			line3.style.transform = "rotate(405deg)";
+			line2.style.transform = "rotate(-405deg)";
+	
+			}
+			else {
+				line1.style= "hamburger div";
+			line2.style= "hamburger div";
+			line3.style= "hamburger div";
+				
+				
+			x.style.display="none";
+			
+			
+	
+			} 
+			
+		  };
+		
+	</script>
+	
 </body>
 </html>
