@@ -6,10 +6,10 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     opacity: 100%;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    /* margin-left: 20vw;
+    margin-right: 20vw; */
 }
-header{
+#header{
     text-align: center;
     margin-left: 0vw;
     margin-top: 25px;
@@ -90,3 +90,77 @@ h5{
     font-size: 24px;
     font-family: cursive;
 }
+.content
+{
+  margin-left: 25vw;
+    margin-right: 20vw;
+position: inherit;
+}
+.hamburger {
+    margin-left: 20px;
+    top: 10px;
+    left: 20px;
+  }
+  
+  .hamburger div {
+    
+    
+    height: 10px;
+    width: 60px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 25px;
+    transition: all 5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+  }
+  #boxz{
+    width: 20%;
+    height: 54%;
+    display: none;
+   border: 10px double black;
+    
+    padding: 0;
+    position: absolute;
+     background: linear-gradient(to bottom right, #800000 0%, #0066ff 142%);
+    /* background-color: rgba(0,0,0,1); */
+    top: 80px;
+    left: 30px;
+  }
+  ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0px;
+    /* width: 00px; */
+    /* background-color: #f1f1f1; */
+    /* margin: 20px; */
+  }
+  
+   
+  
+  li a {
+    
+    display: block;
+    color:whitesmoke;
+    padding: 12px 14px;
+    text-decoration: wavy;
+    font-size: x-large;
+    font-family: cursive;
+    
+  
+    
+  }
+  
+  
+  li a.active {
+    background-color:rgb(77, 129, 228);
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
