@@ -27,7 +27,7 @@ body {
   top: 30px;
   left: 530px;
   right: 0;
-  background-color:  #e73c7e ;
+  background-color:  brown ;
   overflow: hidden;
   width: 45%;
   height:0;
@@ -40,7 +40,7 @@ body {
   left: 35px;
   right: 0;
   top:440px;
-  background-color:  #e73c7e;
+  background-color: #47598a;
   overflow: hidden;
   width: 45%;
   height:0;
@@ -52,7 +52,7 @@ body {
   left: 525px;
   right: 0;
   top:440px;
-  background-color: #008CBA;
+  background-color: black;
   overflow: hidden;
   width: 45%;
   height:0;
@@ -64,7 +64,7 @@ body {
   left: 255px;
   right: 0;
   top:835px;
-  background-color:  #ee7752;
+  background-color:   #0d3d0d;
   overflow: hidden;
   width: 45%;
   height:0;
@@ -101,6 +101,18 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+.text1 {
+  white-space: wrap; 
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 @-webkit-keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -349,3 +361,22 @@ body {
     /* width: 14em; */
     transition:0.50s;
 }
+/*.size1{
+  left: 30%;
+  top: 70%;
+  position: absolute;
+  height :4em;
+  width : 12em;
+  background: transparent;
+ border: 2px solid lawngreen;
+ font-weight: 600;
+ border-radius: 80px;
+ outline : none;
+color : white;
+}
+.size1:hover{
+background-color:springgreen;
+color:black;
+  /* width: 14em; */
+/*  transition:0.50s;
+}*/
