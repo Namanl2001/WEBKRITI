@@ -1,0 +1,44 @@
+body{
+    background-attachment: fixed;
+    background:url("photos/planet-702177_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#content{
+    margin-top: 10vw;
+    margin-left: 18vw;
+    margin-right: 18vw;
+}
+h1{
+    padding-left: 20vw;
+    padding-right: 20vw;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: cursive;
+    color: white;
+}
+h2{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: cursive;
+    color: white;
+}
+p{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: cursive;
+    color: white;
+}
+#contacts{
+    margin-left: 80vw;
+    margin-bottom: 2vw;
+    position: relative;
+    }
+    .na{
+        margin: 0 5px;
+        
+      }
