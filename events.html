@@ -33,11 +33,14 @@
         </div>
             
 <script>
-    var myFunction = () => {
-        var x=document.getElementById("boxz");
-		var line1 = document.getElementById("line1");
-		var line2 = document.getElementById("line2");
-		var line3 = document.getElementById("line3");
+    const x=document.getElementById("boxz");
+	x.style.display="none";
+	const myFunction = () => {
+        
+		const line1 = document.getElementById("line1");
+		const line2 = document.getElementById("line2");
+		const line3 = document.getElementById("line3");
+		
 		if(x.style.display=="none")
 		{
 		
@@ -55,7 +58,7 @@
 		line2.style.transform = "rotate(-405deg)";
 
 		}
-		else {
+		else{
 			line1.style= "hamburger div";
 		line2.style= "hamburger div";
 		line3.style= "hamburger div";
