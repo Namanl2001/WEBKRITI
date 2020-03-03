@@ -72,3 +72,7 @@ body{
 .box input[type = "submit"]:hover{
   background: #2ecc71;
 }
+.fp{
+  color: antiquewhite;text-decoration:none;
+  
+}
