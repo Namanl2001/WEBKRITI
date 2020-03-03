@@ -14,12 +14,11 @@
         <input type="email" title="Enter your email" placeholder="abcd@gmail.com" name="email" id="email" required>
         <br>
         <br>
-        <label for="pass">Enter New Password :</label>
-        <input type="password" name="password" id="pass" title="Enter New Password " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Aa123456" required>
-        <br>
-        <br>
-        <label for="cnf">Confirm New Password :</label>
-        <input type="password" name="cnfpassword" id="cnf" title="Re-Enter Password" placeholder="New Password" required>
+        <label for="phone">Contact No. : </label>
+        <input type="text" name="contact" pattern="[0-9]{10}" title="10 digit Contact No." placeholder="0123456789" required><br><br>
+
+        <label for="pass">Password : </label>
+        <input id="pass" type="password" name="pass" placeholder="Aa123456" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain (A-Z),(a-z) min. 8 characters" required>
         <br>
         <br>
         <br>
