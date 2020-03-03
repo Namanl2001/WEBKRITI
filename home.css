@@ -404,20 +404,18 @@ input{
   }
   .hamburger {
     margin-left: 20px;
-    position: fixed;
+    position: absolute;
   }
-  .cs{
-
-  }
+  
   .hamburger div {
     
     
     height: 10px;
     width: 60px;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 5px;
-    margin-top: 6px;
-    /* margin-left: 20px; */
+    margin-top: 10px;
+    margin-left: 25px;
     transition: all 5s ease;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
