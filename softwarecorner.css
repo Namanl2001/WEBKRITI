@@ -10,15 +10,13 @@ body{
     margin-right: 20vw; */
 }
 #header{
-    padding-left: 25%;
-    padding-top: 2%;
-    padding-right: 45%;
-    padding-bottom: 0%;
+    text-align: center;
+    margin-left: 0vw;
+    margin-top: 25px;
     font-size: 500%;
     font-weight: 600;
     font-family: cursive;
     animation: mymove 2s infinite;
-
 }
 .button
     {
@@ -95,8 +93,10 @@ h5{
 }
 .hamburger {
     margin-left: 20px;
+    margin-top: 20px;
     top: 10px;
-    left: 20px;
+    position: absolute;
+    /* left: 20px; */
   }
   
   .hamburger div {
@@ -124,7 +124,7 @@ h5{
     position: absolute;
      background: linear-gradient(to bottom right, #800000 0%, #0066ff 142%);
     /* background-color: rgba(0,0,0,1); */
-    top: 80px;
+    top: 120px;
     left: 30px;
   }
   ul {
