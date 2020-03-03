@@ -94,8 +94,10 @@ h5{
 }
 .hamburger {
     margin-left: 20px;
+    margin-top: 20px;
+    position: absolute;
     top: 10px;
-    left: 20px;
+    /* left: 20px; */
   }
   
   .hamburger div {
@@ -123,7 +125,7 @@ h5{
     position: absolute;
      background: linear-gradient(to bottom right, #800000 0%, #0066ff 142%);
     /* background-color: rgba(0,0,0,1); */
-    top: 80px;
+    top: 120px;
     left: 30px;
   }
   ul {
