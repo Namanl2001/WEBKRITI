@@ -1,0 +1,55 @@
+body{
+    background: url('photos/back.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    font-family: sans-serif;    
+}
+#contacts{
+margin: 20px;
+left: 1%;
+bottom: 0;
+position: absolute;
+}
+#map{
+	bottom :0.2%;
+	right : 0.2%;
+	position:absolute;
+	border :2px solid lightsteelblue;
+}
+#ad{
+	bottom: 2%;
+	right: 37%;
+	position: absolute;
+	font-size: 20pt;
+	color: white;
+}
+#nm{
+	top: 2%;
+	left: 33%;
+	position: absolute;
+	font-size: 18pt;
+	color:white;
+}
+.black{
+	color:black;
+}
+.na{
+  margin: 0 33px;
+  }
+  #con{
+  	padding:5px;
+  	top: 0.1%;
+  	right:1.5%;
+  	position: absolute;
+  	font-size: 50pt;
+  	font-family: "Comic Sans MS", cursive, sans-serif;
+  	font-weight: bold;
+  	border:7px solid lightsteelblue;
+  	border-top:none;
+  	/*text-decoration: underline;*/
+  	border-radius: 10%;
+  	color: white;
+  }

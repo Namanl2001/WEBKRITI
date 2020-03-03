@@ -50,7 +50,7 @@ position: absolute;
 }
 .header{
   font-size: 05em;
-  color:rgb(77, 129, 228);
+  color:white;
   font-family:cursive;
   box-sizing: border-box;
   width: fit-content;
@@ -70,7 +70,7 @@ position: absolute;
 }
 
 .na{
-  margin: 0 5px;
+  margin: 0 10px;
   
 }
 .cas{
@@ -430,7 +430,7 @@ input{
     height: 32%;
     display: block;
    /* border: 10px double black; */
-    
+    color:white;
     
     position: absolute;
      /* background: linear-gradient(to bottom right, #800000 0%, #0066ff 142%); */
@@ -453,10 +453,11 @@ input{
  .li1 .a1 {
     
     display: block;
-    color:rgb(77, 129, 228);
+    /*color:rgb(77, 129, 228);*/
+    color:white;
     /* padding: 12px 14px; */
     text-decoration: wavy;
-    font-size: x-large;
+    font-size: 25pt;
     font-family: cursive;
     /* margin: 10px 20px; */
   
@@ -471,6 +472,6 @@ input{
   
 .li1 .a1:hover:not(.active) {
     /* background-color: #555; */
-    border-bottom: 5px solid black;
-    color: white;
+    border-bottom: 5px solid white;
+    color: #ff0000;
   }

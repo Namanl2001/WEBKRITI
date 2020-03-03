@@ -1,12 +1,12 @@
 body{
     background-attachment: fixed;
-    background:url("photos/planet-702177_1920.jpg");
+    background:url("photos/bulb.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #content{
-    margin-top: 10vw;
+    margin-top: 6vw;
     margin-left: 18vw;
     margin-right: 18vw;
 }
@@ -17,17 +17,23 @@ h1{
     font-style: italic;
     font-weight: 600;
     font-family: cursive;
-    color: white;
+    color: black;
 }
 h2{
     font-size: 24px;
     font-style: italic;
     font-weight: 600;
     font-family: cursive;
+    color: black;
+}
+#b{
+    color: black;
+}
+#h{
     color: white;
 }
 p{
-    font-size: 18px;
+    font-size: 20px;
     font-style: italic;
     font-weight: 600;
     font-family: cursive;
