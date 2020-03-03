@@ -5,8 +5,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
-    font-family: sans-serif;
-    
+    font-family: sans-serif;    
 }
 @keyframes mymove {
     from {opacity: 0;}
@@ -93,7 +92,7 @@ position: absolute;
   top: 80px;
   left: 30px;
 }
-ul {
+.ul2 {
   list-style-type: none;
   
   /* padding: 10px; */
@@ -104,7 +103,7 @@ ul {
 
  
 
-li a {
+.li2 .a2 {
   
   display: block;
   color:whitesmoke;
@@ -118,12 +117,12 @@ li a {
 }
 
 
-li a.active {
+.li2 .a2.active {
   background-color:rgb(77, 129, 228);
   color: white;
 }
 
-li a:hover:not(.active) {
+.li2 .a2:hover:not(.active) {
   background-color: #555;
   color: white;
 }
@@ -404,18 +403,20 @@ input{
   }
   .hamburger {
     margin-left: 20px;
-    position: absolute;
+    position: fixed;
   }
-  
+  .cs{
+
+  }
   .hamburger div {
     
     
     height: 10px;
     width: 60px;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 5px;
-    margin-top: 10px;
-    margin-left: 25px;
+    margin-top: 6px;
+    /* margin-left: 20px; */
     transition: all 5s ease;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -424,4 +425,52 @@ input{
   }
 
 
+  #boxy{
+    width: 20%;
+    height: 32%;
+    display: block;
+   /* border: 10px double black; */
+    
+    
+    position: absolute;
+     /* background: linear-gradient(to bottom right, #800000 0%, #0066ff 142%); */
+    /* background-color: rgba(0,0,0,1); */
+    top: 490px;
+    left: 25px;
+    
+  }
+  .ul1 {
+    list-style-type: none;
+    
+    /* padding: 10px; */
+    /* width: 00px; */
+    /* background-color: #f1f1f1; */
+    /* margin: 20px; */
+  }
   
+   
+  
+ .li1 .a1 {
+    
+    display: block;
+    color:rgb(77, 129, 228);
+    /* padding: 12px 14px; */
+    text-decoration: wavy;
+    font-size: x-large;
+    font-family: cursive;
+    /* margin: 10px 20px; */
+  
+    
+  }
+  
+  
+.li1 .a1.active {
+    background-color:rgb(77, 129, 228);
+    color: white;
+  }
+  
+.li1 .a1:hover:not(.active) {
+    /* background-color: #555; */
+    border-bottom: 5px solid black;
+    color: white;
+  }
