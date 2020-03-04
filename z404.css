@@ -1,0 +1,16 @@
+body{
+    background: url('photos/error.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    font-family: sans-serif;    
+}
+#back{
+	bottom: 6%;
+	left: 43%;
+	color:white;
+	font-family: serif;
+	position:absolute;
+}
