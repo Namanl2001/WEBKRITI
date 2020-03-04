@@ -23,14 +23,14 @@ body{
     height :4em;
     width : 12em;
     background: transparent;
-   border: 2px solid rgb(46,122,120);
+   border: 2px solid white;
    font-weight: 600;
    border-radius: 80px;
    outline : none;
   color : white;
 }
 .size:hover{
-  background-color:rgb(46,122,120);
+  background-color:white;
   color:black;
     /* width: 14em; */
     transition:0.50s;
@@ -51,11 +51,12 @@ position: absolute;
 .header{
   font-size: 05em;
   color:white;
-  font-family:cursive;
+  font-family: 'Monoton', cursive;
   box-sizing: border-box;
   width: fit-content;
   /* border: 5px double royalblue; */
   /* border-radius: 50px; */
+  text-align: center;
   top: 300px;
 
 }
@@ -68,6 +69,17 @@ position: absolute;
   animation: mymove 1s;
 
 }
+.date
+{
+  font-size: 05em;
+  color:white;
+  font-family:cursive;
+  box-sizing: border-box;
+  width: fit-content;
+  /* border: 5px double royalblue; */
+  /* border-radius: 50px; */
+  top: 300px;
+}
 
 .na{
   margin: 0 10px;
@@ -77,6 +89,7 @@ position: absolute;
 
   display:flex; flex-direction:column;margin-left:25%;margin-top: 80px;
   position: absolute;
+  top: 10%;;
 }
 
 #boxz{
@@ -89,7 +102,7 @@ position: absolute;
   position: absolute;
    background: linear-gradient(to bottom right, #800000 0%, #0066ff 142%);
   /* background-color: rgba(0,0,0,1); */
-  top: 80px;
+  top: 120px;
   left: 30px;
 }
 .ul2 {
@@ -403,11 +416,12 @@ input{
   }
   .hamburger {
     margin-left: 20px;
-    position: fixed;
-  }
-  .cs{
+    margin-top: 20px;
+    top: 10px;
+    position: absolute;
 
   }
+  
   .hamburger div {
     
     
@@ -415,8 +429,8 @@ input{
     width: 60px;
     background-color: white;
     border-radius: 5px;
-    margin-top: 6px;
-    /* margin-left: 20px; */
+    margin-top: 10px;
+    margin-left: 25px;
     transition: all 5s ease;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -426,8 +440,8 @@ input{
 
 
   #boxy{
-    width: 20%;
-    height: 32%;
+    width: 21%;
+    height: 25%;
     display: block;
    /* border: 10px double black; */
     color:white;
@@ -485,4 +499,110 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: #6649b8;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  left: -350px;
+  width: 350px;
+  height: 100%;
+  top: 0;
+  background: rgba(46,122,120,0.6);
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  font-family: 'Monoton', cursive;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+  width: 40px;
+  height: 40px;
+}
+label #cancel{
+  z-index: 1111;
+  left: -280px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+  width: 40px;
+  height: 40px;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 350px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 280px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+.icon
+{
+  width: 40px;
+  height: 40px;
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
 }
