@@ -440,7 +440,7 @@ input{
 
 
   #boxy{
-    width: 21%;
+    width: 23%;
     height: 25%;
     display: block;
    /* border: 10px double black; */
@@ -488,6 +488,7 @@ input{
     /* background-color: #555; */
     border-bottom: 5px solid white;
     color: #ff0000;
+    transition: all 0.7s ease;
   }
   body::-webkit-scrollbar {
   width: 0.25rem;
@@ -528,14 +529,14 @@ body {
   color: white;
   line-height: 70px;
   text-align: center;
-  background: #063146;
+  background: black;
   user-select: none;
 }
 .sidebar ul a{
   display: block;
   height: 100%;
   width: 100%;
-  line-height: 65px;
+  line-height: 50px;
   font-size: 20px;
   color: white;
   padding-left: 40px;
@@ -543,9 +544,11 @@ body {
   border-bottom: 1px solid black;
   border-top: 1px solid rgba(255,255,255,.1);
   transition: .4s;
+  padding-top: 5px;
 }
 ul li:hover a{
-  padding-left: 50px;
+   padding-left: 78px;
+  transition: all 0.75s ease;
 }
 .sidebar ul a i{
   margin-right: 16px;
@@ -598,6 +601,9 @@ label #cancel{
 {
   width: 40px;
   height: 40px;
+
+
+  /*position: absolute;*/
 }
 section{
   background: url(bg.jpeg) no-repeat;
