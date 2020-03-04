@@ -9,3 +9,9 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
+body{
+  background:whitesmoke;
+  background-position: fixed;
+  background-size: cover;
+  height: 100%;
+}
