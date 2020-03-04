@@ -1,5 +1,5 @@
 body{
-    background: url('photos/planet-702177_1920.jpg');
+    background: url('photos/3525580.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -31,7 +31,7 @@ body{
     color: white;
     border-width: 5px;
     border-style: double;
-    border-color:rgb(46,122,120);
+    border-color:rgb(18, 66, 224);
     font-weight: bold;
 }
 
