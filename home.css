@@ -535,9 +535,10 @@ body {
 .sidebar ul a{
   display: block;
   height: 100%;
+  font-family: 'Righteous', cursive;
   width: 100%;
   line-height: 50px;
-  font-size: 20px;
+  font-size: 28px;
   color: white;
   padding-left: 40px;
   box-sizing: border-box;
@@ -545,14 +546,15 @@ body {
   border-top: 1px solid rgba(255,255,255,.1);
   transition: .4s;
   padding-top: 5px;
+  display: flex;
 }
 ul li:hover a{
    padding-left: 78px;
   transition: all 0.75s ease;
 }
-.sidebar ul a i{
+/* .sidebar ul a .im{
   margin-right: 16px;
-}
+} */
 #check{
   display: none;
 }
@@ -575,7 +577,7 @@ label #btn{
 label #cancel{
   z-index: 1111;
   left: -280px;
-  top: 17px;
+  top: 14px;
   font-size: 30px;
   color: #0a5275;
   padding: 4px 9px;
@@ -612,3 +614,7 @@ section{
   height: 100vh;
   transition: all .5s;
 }
+/* .im
+{
+  margin: 20px;
+} */
