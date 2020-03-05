@@ -650,12 +650,12 @@ section{
   /* display: none; */
   /* text-decoration: wavy;
   text-decoration-color: #0066ff; */
-  animation: cc 2s infinite;
+  animation: cc 4s infinite ;
 
 }
 @keyframes cc{
-  from {color: #0357d6;}
-  to {color:#f7126a;}
+  from {color:black; }
+  to {color:white;}
 }
 #xs
 {
