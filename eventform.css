@@ -39,14 +39,14 @@ body::-webkit-scrollbar-thumb {
   }
   .registrationbox{
     text-align: start;
-    background:rgba(0,0,0,0.6);
+    background:rgba(0,0,0,0.8);
     width: 33%;
     height: 750px;
     top: 65%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
-    padding: 40px 30px;
+    padding: 30px 30px;
     box-sizing: border-box;
     border-radius: 80px;
     
