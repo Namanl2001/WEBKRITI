@@ -630,10 +630,11 @@ body{
     font-family: 'Nosifer', cursive;
     font-size: 120px;
     height: 100%;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
       background-size: 400% 400%;
       -webkit-animation: gradient 15s ease infinite;
-            animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite; */
+            background: linear-gradient(#f70000, #f89200, #f8f501, #038f00,#0168f8, #a200f7;
     position: absolute;
     transition: ease-in-out 2s;
     left: 0%;
@@ -666,26 +667,4 @@ body{
   }
   
   
-  @-webkit-keyframes gradient {
-      0% {
-          background-position: 0% 50%;
-      }
-      50% {
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0% 50%;
-      }
-  }
   
-  @keyframes gradient {
-      0% {
-          background-position: 0% 50%;
-      }
-      50% {
-          background-position: 100% 50%;
-      }
-      100% {
-          background-position: 0% 50%;
-      }
-  }
