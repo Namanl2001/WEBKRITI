@@ -12,7 +12,7 @@
 </head>
 <body>
 
-
+<div id="bo">
 <div id="contacts">
 	<a class="na" href="https://www.facebook.com/Infotsav" target=_blank; ><img src="photos/facebook.png" height="50px" width="50px"></a>
 <a class="na"href="https://www.instagram.com/infotsav19/?hl=en"target=_blank; ><img src="photos/instagram.png" width="50px" height="50px"></a>
@@ -20,8 +20,8 @@
 <a class="na"href="https://twitter.com/infotsav_iiitm?"target=_blank; ><img src="photos/twitter.png" width="50px" height="50px"></a>
 </div>
 <br><div id="newuser">
-	<a href="login.html" class="bitton" id="button"><button class="size">Login</button></a>
-
+	<button class="size" onclick="document.getElementById('id01').style.display='block';document.getElementById('bo').style.display='none'" >Login</button>
+     
 <a href="Register.html"><button class="size">Sign Up</button></a>
 </div>
 <!-- <div class="hamburger" onclick="myFunction()">
@@ -80,6 +80,7 @@
 	<div class="content">"INFOTSAV is the Techno-Managerial festival of ABV-IIITM Gwalior. It is the largest techno-managerial fest of central India. Infotsav is a platform which gives a competitive and healthy atmosphere to compete, develop and nourish the creativity and innovation."</div>
 	
 </div>
+
 <!-- <div class="container">
 	<div class="gear" id="gear1"></div>
 	<div class="gear" id="gear2"></div>
@@ -104,6 +105,19 @@
 	<div class="hy"><span > INFOTSAV<br>2K20</span></div>
 	<div id="xs"><button class="size" onclick="myh()">EXPLORE</button></div>
 </div> -->
+</div>
+<div id="id01" class="box" class="modal">
+	<form  action="login.html" method="post" name="login">
+		<div class="imgcontainer"><span onclick="document.getElementById('id01').style.display='none';document.getElementById('bo').style.display='block'" class="close" title="Close Modal">&times;</span></div>
+		<h1 style="color: white;font-family:cursive;">Login</h1><br>
+		<input type="text" name="" placeholder="Username" required>
+		<input type="password" name="" placeholder="Password" required>
+		 <a href="Update.html" class="fp" >Forgot Password?</a><br><br>
+		<input type="submit" name="" value="Login">
+		
+		
+	  </form>
+	</div>
 
 <script>
 	      
@@ -114,7 +128,16 @@
 		  
 		  
 	  }
-	
+	  var modal = document.getElementById('id01');
+        // When the user clicks anywhere outside of the modal, close it
+	  
+	  window.onclick = function(event) {
+		  if (event.target == box) {
+			  box.style.display = "block";
+			  
+		  }
+		  
+	  }
 		
 </script>
 </body>
