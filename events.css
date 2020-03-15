@@ -1,8 +1,3 @@
-
-/* .container {
-  position: absolute;
-  width: 50%;
-} */
 body::-webkit-scrollbar {
   width: 0.25rem;
 }
@@ -14,10 +9,18 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
+#heading 
+{
+  font-size: 60px;
+  margin-left: 180px;
+  font-family: 'Nosifer', cursive;
+  color: white;
+  
+}
 .overlay1 {
   position: absolute;
   bottom: 100%;
-  top: 30px;
+  top: 360px;
   left: 35px;
   right: 0;
   background-color: #008CBA;
@@ -30,7 +33,7 @@ body::-webkit-scrollbar-thumb {
 .overlay2 {
   position: absolute;
   bottom: 100%;
-  top: 30px;
+  top: 360px;
   left: 530px;
   right: 0;
   background-color:  brown ;
@@ -45,7 +48,7 @@ body::-webkit-scrollbar-thumb {
   
   left: 35px;
   right: 0;
-  top:440px;
+  top:820px;
   background-color: #47598a;
   overflow: hidden;
   width: 45%;
@@ -57,7 +60,7 @@ body::-webkit-scrollbar-thumb {
   bottom: 100%;
   left: 525px;
   right: 0;
-  top:440px;
+  top:820px;
   background-color: black;
   overflow: hidden;
   width: 45%;
@@ -69,7 +72,7 @@ body::-webkit-scrollbar-thumb {
   bottom: 100%;
   left: 255px;
   right: 0;
-  top:835px;
+  top:1280px;
   background-color:   #0d3d0d;
   overflow: hidden;
   width: 45%;
@@ -142,19 +145,21 @@ body::-webkit-scrollbar-thumb {
 		background-position: 0% 50%;
 	}
 }
+#heading{
+  width: 100%;
+  height: 23%;
+}
   .container{
       width: 1000px;
-      height: 1200px;
+      height: 1400px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       margin-left: 21%;
-      margin-top: 5%;
+      margin-top: -5%;
       position: absolute;
       padding: 20px;
-      
-      
-      
+  
   }
   #it1{
       width: 45%;
