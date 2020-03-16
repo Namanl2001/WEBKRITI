@@ -1,5 +1,5 @@
 body{
-    background: url('photos/back.jpg');
+    background: url('photos/planet.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -7,10 +7,54 @@ body{
     height: 100%;
     font-family: sans-serif;    
 }
+.mapouter{position:relative;text-align:right;height:400px;width:500px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:500px;}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
 body::-webkit-scrollbar {
   width: 0.25rem;
 }
-
+ #c1{
+  margin-left: 45%;
+  margin-top: 8%;
+ }
+  #c2{
+  margin-left: 2%;
+  margin-top: -540px;
+ }
+  #c3{
+  margin-left: 23.5%;
+  margin-top: -540px;
+ }
 body::-webkit-scrollbar-track {
   background: #1e1e24;
 }
@@ -20,7 +64,7 @@ body::-webkit-scrollbar-thumb {
 }
 #contacts{
 margin: 20px;
-left: 1%;
+left: 17%;
 bottom: 0;
 position: absolute;
 }
@@ -31,21 +75,18 @@ position: absolute;
 	border :2px solid lightsteelblue;
 }
 #ad{
-	bottom: 2%;
-	right: 37%;
+	bottom: 65%;
+	left: 70%;
 	position: absolute;
 	font-size: 20pt;
 	color: white;
 }
 #nm{
-	top: 2%;
-	left: 33%;
-	position: absolute;
-	font-size: 18pt;
-	color:white;
+	display: none;
 }
 .black{
-	color:black;
+	color: white;
+  font-weight: 700;
 }
 .na{
   margin: 0 33px;
@@ -53,7 +94,7 @@ position: absolute;
   #con{
   	padding:5px;
   	top: 0.1%;
-  	right:1.5%;
+  	right:40%;
   	position: absolute;
   	font-size: 50pt;
   	font-family: "Comic Sans MS", cursive, sans-serif;
@@ -64,3 +105,51 @@ position: absolute;
   	border-radius: 10%;
   	color: white;
   }
+
+  @media only screen and (max-width: 1380px){
+    .card {
+  max-width: 300px;}
+    #c1{
+      visibility: hidden;
+ }
+  #c2{
+ visibility: hidden;
+ }
+  #c3{
+ visibility: hidden;
+ }
+ #con{font-size: 25pt;
+  margin-left: 0%}
+
+  #map{
+  bottom :-100px;
+  right : 0px;
+  position:absolute;
+}
+#ad{
+    margin-left: -66%;
+    top: 775px;
+    font-size: 16pt;
+  }
+  .mapouter{position:relative;text-align:right;height:350px;width:380px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:380px;}
+
+#contacts{
+margin: 10px;
+left: 5%;
+bottom: -400px;
+position: absolute;
+padding-bottom: 20px;
+}
+.na{
+  margin: 0 8px;
+  }
+  #nm{
+    display: block;
+  top: 24%;
+  left: 6%;
+  position: absolute;
+  font-size: 18pt;
+  color:white;
+}
+}
