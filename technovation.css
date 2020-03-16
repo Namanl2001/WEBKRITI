@@ -20,6 +20,11 @@ body{
     text-align: center;
     animation: mymove 2s infinite;
 }
+.Description{
+    font-size: 22px;
+    font-family: cursive;
+    color: white;
+}
 .button
     {
         border:0;
@@ -69,7 +74,7 @@ body{
 h3{
     animation: mymove 2s infinite;
     color: white;
-    font-size: 24px;
+    font-size: 32px;
     font-family: cursive;
 }
 p{
@@ -89,7 +94,7 @@ h5{
 }
 .quotes{
     color: black;
-    font-size: 24px;
+    font-size: 28px;
     font-family: cursive;
 }
 .hamburger {
@@ -192,6 +197,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .sidebar {
+  z-index: 9;
   position: fixed;
   left: -350px;
   width: 350px;
@@ -283,4 +289,109 @@ label #cancel{
 
 
   /*position: absolute;*/
+}
+
+
+@media screen and (max-width:770px){
+
+
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    width: 60%;
+    background: rgba(46,122,120,1);
+
+  }
+  .sidebar header {
+    font-size: 22px;
+    font-family: sans-serif;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 8px;
+  }
+  .sidebar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  .sidebar ul a{
+    height: 100%;
+    line-height: 30px;
+    font-size: 18px;
+      }
+  #check{
+    display: none;
+  }
+  label #btn,label #cancel{
+    
+    /* background: #042331; */
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  label #btn{
+    position: relative;
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    width: 30px;
+    height: 30px;
+  }
+  label #cancel{
+    position: fixed;
+    left: -320px;
+    top: 14px;
+    font-size: 50px;
+    width: 40px;
+    height: 40px;
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #check:checked ~ label #cancel{
+    left: 44%;
+    top:0%;
+  }
+  .icon
+  {
+    width: 30px;
+    height: 30px;
+   
+    /*position: absolute;*/
+  }
+  #header{
+    padding-left: 5%;
+    padding-top: 15%;
+    padding-right: 45%;
+    padding-bottom: 0%;
+    font-size: 250%;
+    font-weight: 600;
+
+}
+
+.content
+{
+  margin-left: 7vw;
+    margin-right: 3vw;
+position: inherit;
+}
+#text{
+    font-size: 25px;
+    font-family: cursive;
+    color: black;
+}
+.Description{
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+}
+.quotes{
+  font-size: 22px;
+}
+h3{font-size: 30px;}
 }

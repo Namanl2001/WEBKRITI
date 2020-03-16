@@ -78,13 +78,13 @@ position: inherit;
     }
   }
 .Description{
-    font-size: 12 px;
+    font-size: 22px;
     font-family: cursive;
     color: white;
 }
 h3{
     color: white;
-    font-size: 24px;
+    font-size: 32px;
     font-family: cursive;
     animation: mymove 2s infinite;
 }
@@ -358,12 +358,11 @@ label #cancel{
   {
     width: 30px;
     height: 30px;
-  
-  
+   
     /*position: absolute;*/
   }
 	#header{
-    padding-left: 25%;
+    padding-left: 15%;
     padding-top: 15%;
     padding-right: 45%;
     padding-bottom: 0%;
@@ -387,6 +386,12 @@ position: inherit;
     font-size: 20px;
     font-family: cursive;
     color: white;
+}
+
+#text{
+    font-size: 20px;
+    font-family: cursive;
+    color: black;
 }
 h3{font-size: 30px;}
 
