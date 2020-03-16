@@ -13,6 +13,7 @@ body{
     font-size: 22px;
     font-family: cursive;
     color: white;
+    letter-spacing: 2px;
 }
 body::-webkit-scrollbar {
   width: 0.25rem;
