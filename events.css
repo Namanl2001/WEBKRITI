@@ -805,14 +805,14 @@ body {
     height: 100%;
     top: 0;
     background: rgba(46,122,120,1);
-    transition: all .5s ease;
+    transition: all .5s ease ease-in-out;
   }
   .sidebar header {
-    font-size: 52px;
+    font-size: 38px;
     font-family: 'Monoton', cursive;
     color: white;
     line-height: 120px;
-    text-align: center;
+    text-align: left;
     background: black;
     user-select: none;
   }
@@ -870,7 +870,7 @@ body {
   }
   label #cancel{
     z-index: 1111;
-    left: -320px;
+    left: -280px;
     top: 14px;
     font-size: 50px;
     color: #0a5275;
@@ -888,7 +888,7 @@ body {
     pointer-events: none;
   }
   #check:checked ~ label #cancel{
-    left: 60%;
+    left: 45%;
   }
   #check:checked ~ section{
     margin-left: 250px;
