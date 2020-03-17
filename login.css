@@ -14,8 +14,9 @@ body{
   }
 
 .box{
-  width: 500px;
-  padding: 40px;
+  width: 250px;
+  height: 350px;
+  padding: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -34,16 +35,18 @@ body{
   color: white;
   text-transform: uppercase;
   font-weight: 500;
+  font-size: 25px;
 }
 .box input[type = "text"],.box input[type = "password"]{
   border:0;
   background: none;
+  height: 15px;
   display: block;
-  margin: 20px auto;
+  margin: 10px auto;
   text-align: center;
   border: 2px solid #3498db;
   padding: 14px 10px;
-  width: 300px;
+  width: 180px;
   outline: none;
   color: #1a8cff;
   border-radius: 24px;
@@ -51,7 +54,8 @@ body{
   font-size:15pt;
 }
 .box input[type = "text"]:focus,.box input[type = "password"]:focus{
-  width: 450px;
+  width: 230px;
+  height: 15px;
   border-color: #2ecc71;
 }
 .box input[type = "submit"]{
