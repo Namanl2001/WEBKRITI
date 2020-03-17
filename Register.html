@@ -9,12 +9,12 @@
 <body>
 	<div class="registrationbox">
 		<!-- <div ><img src="photos/user.png" id="user">	 -->
-	<h1 style="text-align:center;font-family:cursive;";>SIGN UP</h1>
+	<h1 style="text-align:center;font-family:cursive;@media(max-width:768px){font-size:25px}";>SIGN UP</h1>
 	<form name="signup">
-			<label for="fullname">Full name :</label>
-			<input id="fullname"type="text" name="fn" placeholder="Full Name" required autofocus><br>
+			<label for="fullname" style="@media (max-width: width 768px;){font-size: 15px;}">Full name :</label>
+			<input id="fullname"style="@media (max-width: width 768px;){font-size: 15px;}"type="text" name="fn" placeholder="Full Name" required autofocus><br>
 			<br>
-		<label >
+		<label style="@media (max-width: width 768px;){font-size: 15px;}" >
 			DoB : 
 			<select class="size1"  aria-label="Day" name="birthday_day" id="day" title="Day"><option value="0"selected="1">Day</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19" >19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
 
@@ -24,33 +24,33 @@
 		 </label>
 		
 		<div><br>
-		<label for="gender">Gender : </label>
-		<input  type="radio" name="gender" value="Male" checked><span class="radio">Male</span>
-		<input type="radio"  name="gender" value="Female" required> <span class="radio">Female</span>
+		<label for="gender" style="@media (max-width: width 768px;){font-size: 15px;}">Gender : </label>
+		<input  style="@media (max-width: width 768px;){font-size: 15px;}"type="radio" name="gender" value="Male" checked><span class="radio">Male</span>
+		<input style="@media (max-width: width 768px;){font-size: 15px;}"type="radio"  name="gender" value="Female" required> <span class="radio">Female</span>
 		<div>
 		
 
 		</div><br>
-		<label for="phone">Contact No. : </label>
-		<input type="text" name="contact" pattern="[0-9]{10}" title="10 digit Contact No." placeholder="0123456789" required><br><br>
-		<label for="email">Email id: </label>
-		<input id="email" type="email" name="email" placeholder="abcd@gmail.com" required><br><br>
-		<label for="username">Username : </label>
-		<input id="username"type="text" name="ln" placeholder="Username" required><br><br>
+		<label for="phone" style="@media (max-width: width 768px;){font-size: 15px;}">Contact No. : </label>
+		<input type="text" style="@media (max-width: width 768px;){font-size: 15px;}" name="contact" pattern="[0-9]{10}" title="10 digit Contact No." placeholder="0123456789" required><br><br>
+		<label for="email" style="@media (max-width: width 768px;){font-size: 15px;}">Email id: </label>
+		<input id="email" type="email" style="@media (max-width: width 768px;){font-size: 15px;}" name="email" placeholder="abcd@gmail.com" required><br><br>
+		<label for="username" style="@media (max-width: width 768px;){font-size: 15px;}">Username : </label>
+		<input id="username"type="text" name="ln" style="@media (max-width: width 768px;){font-size: 15px;}"placeholder="Username" required><br><br>
 
-		 <label for="pass">Password : </label>
-        <input id="pass" type="password" name="pass" placeholder="Aa123456" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain (A-Z),(a-z) min. 8 characters" required>
+		 <label for="pass" style="@media (max-width: width 768px;){font-size: 15px;}">Password : </label>
+        <input id="pass" style="@media (max-width: width 768px;){font-size: 15px;}"type="password" name="pass" placeholder="Aa123456" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain (A-Z),(a-z) min. 8 characters" required>
         <br><br>
 
-		<label for="passch">Confirm Password : </label>
-		<input id="passch" type="password" name="passch" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Enter password ">
+		<label for="passch" style="@media (max-width: width 768px;){font-size: 15px;}">Confirm Password : </label>
+		<input id="passch" style="@media (max-width: width 768px;){font-size: 15px;}"type="password" name="passch" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Enter password ">
 		<br><br>
 
 		<input class="cb"type="checkbox" name="agree" required>
 		<label id="tnc" for="tnc">I have accepted the terms and conditions.</label><br><br>
 		<div size="20px" id="mod">
 
-		<input type="submit" name="submit" class="size" onclick="checkpassword(),checkdate()">
+		<input  style="@media (max-width: width 768px;){font-size: 15px;}" type="submit" name="submit" class="size" onclick="checkpassword(),checkdate()">
 		<input type="reset" class="size" ></div>
 	</form>
 	</div>
