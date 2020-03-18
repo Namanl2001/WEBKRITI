@@ -1,9 +1,9 @@
 body{
     background: fixed;
-    background-attachment: fixed;
-    background-color: rgb(2, 13, 31);
-    /* background: linear-gradient(to top right, #ff9900 0%, #0066ff 120%);
-    background: linear-gradient(to right, #333300 0%, #00ffff 125%); */
+    background-attachment: fixed; 
+    /* background-color: rgb(2, 13, 31); */
+    background: linear-gradient(-225deg, #02398b 0%,rgb(2, 13, 31)  100%);
+    /* background: linear-gradient(to right, #333300 0%, #00ffff 125%); */
     background-repeat: no-repeat;
     background-size: 100%;
     opacity: 100%;
