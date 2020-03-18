@@ -14,4 +14,8 @@ body{
   background-position: fixed;
   background-size: cover;
   height: 100%;
+  
+}
+h3,h2,h1,b{
+  font-family: cursive;
 }
