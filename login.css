@@ -1,3 +1,95 @@
+
+body{
+  background: url('photos/3525580.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  font-family: sans-serif;
+  animation: mymove 4s ;
+}
+@keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.box{
+  width: 500px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /*background:lightsteelblue;*/
+  background:rgba(0,0,0,0.7);
+  text-align: center;
+  border-radius: 80px;
+  border-width: 5px;
+  border-style: double;
+  border-color:rgb(18, 66, 224); 
+  
+}
+
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 300px;
+  outline: none;
+  color: #1a8cff;
+  border-radius: 24px;
+  transition: 0.30s;
+  font-size:15pt;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 450px;
+  border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 35px;
+  transition: 0.25s;
+  cursor: pointer;
+   font-size:15pt;
+}
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+.fp{
+  color: antiquewhite;text-decoration:none;
+  
+}
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+@media (max-width:768px){
 body{
   background: url('photos/3525580.jpg');
   background-position: center center;
@@ -90,4 +182,4 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: #6649b8;
-}
+}}
