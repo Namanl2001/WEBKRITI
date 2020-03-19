@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
  }
   #c3{
   margin-left: 23.5%;
-  margin-top: -540px;
+  margin-top: -548px;
  }
 body::-webkit-scrollbar-track {
   background: #1e1e24;
@@ -66,7 +66,7 @@ body::-webkit-scrollbar-thumb {
 #contacts{
 margin: 20px;
 left: 17%;
-bottom: 0;
+bottom: -1%;
 position: absolute;
 }
 #map{
