@@ -1,9 +1,10 @@
 body{
     background: fixed;
-    background-attachment: fixed;
+    background-attachment: fixed; 
+    /* background-color: rgb(2, 13, 31); */
+    /* background: rgb(2,0,36); */
     background-color: rgb(2, 13, 31);
-    /* background: linear-gradient(to top right, #ff9900 0%, #0066ff 120%);
-    background: linear-gradient(to right, #333300 0%, #00ffff 125%); */
+    /* background: linear-gradient(to right, #333300 0%, #00ffff 125%); */
     background-repeat: no-repeat;
     background-size: 100%;
     opacity: 100%;
@@ -228,7 +229,7 @@ body {
   padding-left: 40px;
   box-sizing: border-box;
   border-bottom: 1px solid black;
-  border-top: 1px solid rgba(255,255,255,.1);
+  /* border-top: 1px solid rgba(255,255,255,.1); */
   transition: .4s;
   padding-top: 5px;
   display: flex;

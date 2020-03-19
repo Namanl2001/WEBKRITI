@@ -16,7 +16,7 @@ body{
     text-align: start;
     background:rgba(0,0,0,0.8);
     width: 30%;
-    height: 650px;
+    height: auto;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -26,7 +26,7 @@ body{
     border-radius: 80px;
     
     min-width: 350px;
-    margin-bottom: 30px;
+    margin: 30px;
     font-size: 23px;
     color: white;
     border-width: 5px;
@@ -69,9 +69,9 @@ input.cb {
 }
 /*size of buttons*/
 .size{
-    margin-left: 100px;
-    height :4em;
-    width : 14em;
+    margin-left: 27%;
+    height :60px;
+    width : 180px;
     background: transparent;
    border: 2px solid #6666ff;
    font-weight: 600;
@@ -109,4 +109,110 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: #6649b8;
+}
+@media (max-width:768px)
+{
+    body{
+        background: url('photos/password.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100%;
+        font-family: sans-serif;
+        animation: mymove 1s ;
+    }
+    @keyframes mymove {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+    .registrationbox{
+        text-align: start;
+        background:rgba(0,0,0,0.8);
+        width: 20%;
+        height: auto;
+        top: 60%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        border-radius: 80px;
+        
+        
+        min-width: 350px;
+        margin-bottom: 30px;
+        font-size: 23px;
+        color: white;
+        border-width: 5px;
+        border-style: double;
+        border-color:rgb(46,122,120);
+        font-weight: bold;
+    }
+    
+    #mod{
+        align-self: center;
+        padding-left: 1%;
+    }
+    .registrationbox input[type="text"],input[type="email"],input[type="password"]{
+       width: 100%;
+       border: none;
+       border-bottom: 1px solid white;
+       background: transparent;
+       padding-left: 5px;
+       outline: none;
+       height: 40px;
+       color:#1a8cff;
+       font-size: 16px;
+    }
+    .registrationbox input[type="submit"]:hover
+    {
+        cursor: pointer;
+        background: #6666ff;
+    }
+    .registrationbox ::placeholder{
+        color: gray;
+    }
+    /*changin the font-size of term and condition line*/
+    #tnc{   
+    font-size: 17.5px;
+    }
+    /*changin th size of checkbox*/
+    input.cb {
+        width : 20px;
+        height : 20px;
+    }
+    /*size of buttons*/
+    .size{
+        margin-left: 30%;
+        height :3em;
+        width :  10em;
+        background: transparent;
+       border: 2px solid #6666ff;
+       font-weight: 600;
+       border-radius: 80px;
+       outline : none;
+      color : white;
+    }
+    /*size of dob buttons*/
+    input:-webkit-autofill {
+        -webkit-box-shadow:0 0 0 50px black inset; /* Change the color to your own background color */
+        -webkit-text-fill-color: #1a8cff;
+    }
+    input:-webkit-autofill:focus {
+        -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px white inset;
+        -webkit-text-fill-color: #1a8cff;
+    }
+    #user{
+        width: 150px;
+        height:150px;
+        border-radius:50%;
+        position: absolute;
+        top: 0px;
+        left:100px;
+        margin-top:5px;
+        align-self: center;
+        
+    }
+    
 }
