@@ -31,7 +31,7 @@ h1{
     color: black;
 }
 h2{
-    font-size: 24px;
+    font-size: 30px;
     font-style: italic;
     font-weight: 600;
     font-family: cursive;
@@ -42,20 +42,42 @@ h2{
 }
 #h{
     color: white;
+    letter-spacing: 2.5px;
 }
 p{
-    font-size: 20px;
+    font-size: 24px;
     font-style: italic;
     font-weight: 600;
     font-family: cursive;
     color: white;
+    letter-spacing: 2px;
 }
 #contacts{
-    margin-left: 80vw;
+    margin-left: 75vw;
     margin-bottom: 2vw;
     position: relative;
     }
     .na{
-        margin: 0 5px;
+        margin: 0 15px;
         
       }
+
+@media screen and (max-width:1270px){
+		h1{
+    padding-left: 0%;
+    font-size: 53px;
+    /*padding-right: 5vw;*/
+}
+#content{
+    margin-left: 5vw;
+    margin-right: 2vw;
+}
+.bl{color:black; font-weight: 900px;}
+#contacts{
+    margin-left: 1vw;
+    margin-bottom: 15vw;
+    position: relative;
+    }
+    h2{
+    font-size: 30px;}
+}
