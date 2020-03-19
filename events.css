@@ -906,9 +906,9 @@ body {
   
   body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 300% 300%;
-    -webkit-animation: gradient 15s ease infinite;
-            animation: gradient 15s ease infinite;
+    background-size: 200% 200%;
+    -webkit-animation: none;
+            animation: none;
             
   }
 }
