@@ -17,7 +17,7 @@ body{
     background:rgba(0,0,0,0.6);
     width: 30%;
     height: auto;
-    top: 75%;
+    top: 80%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -26,7 +26,7 @@ body{
     border-radius: 80px;
     
     min-width: 350px;
-    margin-bottom: 30px;
+    margin-top: 50px;
     font-size: 23px;
     color: white;
     border-width: 5px;
@@ -196,7 +196,7 @@ body::-webkit-scrollbar-thumb {
     /*size of buttons*/
     .size{
         height :3em;
-        width : 10em;
+        width : 8em;
         background: transparent;
        border: 2px solid #6666ff;
        font-weight: 600;
