@@ -25,14 +25,16 @@ body{
     margin-right: 40%;
 }
 .size{
-    height :4em;
-    width : 12em;
+    height :3.5em;
+    width : 10em;
     background: transparent;
    border: 2px solid white;
    font-weight: 600;
    border-radius: 80px;
    outline : none;
   color : white;
+  letter-spacing: 2px;
+  font-size: 12pt;
 }
 .size:hover{
   background-color:white;

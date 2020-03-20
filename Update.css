@@ -69,12 +69,14 @@ input.cb {
 }
 /*size of buttons*/
 .size{
-    margin-left: 27%;
+    margin-left: 30%;
     height :60px;
-    width : 180px;
+    width : 150px;
     background: transparent;
    border: 2px solid #6666ff;
-   font-weight: 600;
+   font-weight: 500;
+   font-size: 15pt;
+   letter-spacing: 2px;
    border-radius: 80px;
    outline : none;
   color : white;
@@ -186,13 +188,15 @@ body::-webkit-scrollbar-thumb {
     .size{
         margin-left: 30%;
         height :3em;
-        width :  10em;
+        width :  8em;
         background: transparent;
        border: 2px solid #6666ff;
        font-weight: 600;
+       font-size: 12pt;
        border-radius: 80px;
        outline : none;
       color : white;
+      letter-spacing: 1.5px;
     }
     /*size of dob buttons*/
     input:-webkit-autofill {
