@@ -13,6 +13,32 @@ body{
     from {opacity: 0;}
     to {opacity: 1;}
   }
+  h4{
+    color: whitesmoke;
+  }
+  a{
+    text-decoration: none;
+  }
+  .size{
+    border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 35px;
+  transition: 0.25s;
+  cursor: pointer;
+   font-size:10pt;
+
+}
+.size:hover{
+  background: #2ecc71;
+}
+
 
 .box{
   width: 500px;
@@ -106,8 +132,8 @@ body{
   }
 
 .box{
-  width: 250px;
-  height: 350px;
+  width: 280px;
+  height: auto;
   padding: 20px;
   position: absolute;
   top: 50%;
