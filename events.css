@@ -1,3 +1,30 @@
+.size span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.size span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -10px;
+  right: -20px;
+  transition: 0.5s;
+  font-size: 28px;
+}
+
+.size:hover span {
+  padding-right: 25px;
+}
+
+.size:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 body::-webkit-scrollbar {
   width: 0.25rem;
 }
@@ -303,12 +330,12 @@ body::-webkit-scrollbar-thumb {
   color : white;
   letter-spacing: 2px;
 }
-.size:hover{
+/*.size:hover{
   background-color:springgreen;
   color:black;
-    /* width: 14em; */
+     width: 14em; 
     transition:0.50s;
-}
+}*/
 /*.size1{
   left: 30%;
   top: 70%;
@@ -467,7 +494,7 @@ body {
 
 
 
-@media (max-width:768px)
+@media (max-width:1200px)
 {
   body::-webkit-scrollbar {
     width: 0.25rem;
@@ -493,7 +520,7 @@ body {
   .overlay1 {
     position: absolute;
     bottom: 100%;
-    top: 380px;
+    top: 450px;
     left: 65px;
     right: 0;
     background-color: #008CBA;
@@ -506,7 +533,7 @@ body {
   .overlay2 {
     position: absolute;
     bottom: 100%;
-    top: 860px;
+    top: 930px;
     left: 65px;
     right: 0;
     background-color:  brown ;
@@ -521,7 +548,7 @@ body {
     
     left: 65px;
     right: 0;
-    top:1340px;
+    top:1400px;
     background-color: #47598a;
     overflow: hidden;
     width: 75%;
@@ -533,7 +560,7 @@ body {
     bottom: 100%;
     left: 65px;
     right: 0;
-    top:1820px;
+    top:1880px;
     background-color: black;
     overflow: hidden;
     width: 75%;
@@ -545,7 +572,7 @@ body {
     bottom: 100%;
     left: 65px;
     right: 0;
-    top:2300px;
+    top:2370px;
     background-color:   #0d3d0d;
     overflow: hidden;
     width: 75%;
@@ -574,7 +601,7 @@ body {
   .text {
     white-space: wrap; 
     color: white;
-    font-size: 20px;
+    font-size: 21px;
     position: absolute;
     
     top: 35%;
@@ -587,7 +614,7 @@ body {
     color: black;
     font-size: 20px;
     position: absolute;
-    
+    letter-spacing: 1px;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);

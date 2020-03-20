@@ -15,10 +15,11 @@ body{
   .registrationbox{
     text-align: start;
     background:rgba(0,0,0,0.6);
-    width: 30%;
+    width: 33%;
     height: auto;
-    top: 80%;
+    top: 70%;
     left: 50%;
+
     position: absolute;
     transform: translate(-50%,-50%);
     padding: 40px 30px;
@@ -27,6 +28,7 @@ body{
     
     min-width: 350px;
     margin-top: 50px;
+    margin-bottom: 20px;
     font-size: 23px;
     color: white;
     border-width: 5px;
@@ -56,7 +58,8 @@ body{
 	background: #6666ff;
 }
 .radio{
-    font-size: 17.5px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
 }
 .registrationbox ::placeholder{
     color: gray;
@@ -72,26 +75,29 @@ input.cb {
 }
 /*size of buttons*/
 .size{
-    height :3em;
-    width : 8em;
+    height :3.5em;
+    width : 10em;
     background: transparent;
    border: 2px solid #6666ff;
    font-weight: 600;
    border-radius: 80px;
    outline : none;
   color : white;
+  letter-spacing: 2px;
+  font-size: 12pt;
 
 }
 /*size of dob buttons*/
 .size1{
-   height :2em;
-    width : 5em;
+   height :2.5em;
+    width : 7em;
     background: transparent;
    border: 1.2px solid white;
    font-weight: 600;
    border-radius: 90px; 
    outline : none;
    color:#1a8cff;
+   letter-spacing: 2px;
 }
 input:-webkit-autofill {
     -webkit-box-shadow:0 0 0 50px black inset; /* Change the color to your own background color */
@@ -139,7 +145,7 @@ body::-webkit-scrollbar-thumb {
         background:rgba(0,0,0,0.6);
         width: 150px;
         /* height: 500px; */
-        top: 75%;
+        top: 70%;
         left: 50%;
         position: absolute;
         transform: translate(-50%,-50%);
@@ -149,7 +155,7 @@ body::-webkit-scrollbar-thumb {
         /* margin: 30px; */
         /* min-width: 350px; */
         /* margin: 30px; */
-        
+        margin-bottom: 35px;
         color: white;
         border-width: 5px;
         border-style: double;
@@ -179,7 +185,7 @@ body::-webkit-scrollbar-thumb {
         background: #6666ff;
     }
     .radio{
-        font-size: 17.5px;
+        font-size: 15pt;
     }
     .registrationbox ::placeholder{
         color: gray;
@@ -195,11 +201,11 @@ body::-webkit-scrollbar-thumb {
     }
     /*size of buttons*/
     .size{
-        height :3em;
-        width : 8em;
+        height :2.5em;
+        width : 7em;
         background: transparent;
        border: 2px solid #6666ff;
-       font-weight: 600;
+       font-weight: 500;
        border-radius: 80px;
        outline : none;
       color : white;
@@ -207,10 +213,11 @@ body::-webkit-scrollbar-thumb {
     /*size of dob buttons*/
     .size1{
        height :2em;
-        width : 5em;
+        width : 5.5em;
         background: transparent;
        border: 1.2px solid white;
-       font-weight: 600;
+       font-weight: 550;
+       font-size: 10pt;
        border-radius: 90px; 
        outline : none;
        color:#1a8cff;

@@ -13,7 +13,7 @@ hr.style1{
   width: 500px;
   float: center;
   border: 0; 
-  height: 1px; 
+  height: 2px; 
   background-image: -webkit-linear-gradient(left,rgba(0,0,0,0.7), white,rgba(0,0,0,0.7));
   background-image: -moz-linear-gradient(left, rgba(0,0,0,0.7), white,rgba(0,0,0,0.7));
   background-image: -ms-linear-gradient(left, rgba(0,0,0,0.7), white,rgba(0,0,0,0.7));
