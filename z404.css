@@ -14,3 +14,9 @@ body{
 	font-family: serif;
 	position:absolute;
 }
+@media screen and (max-width:770px){
+    #back{
+   font-size: 28px;
+   left: 35%;
+}
+    }
