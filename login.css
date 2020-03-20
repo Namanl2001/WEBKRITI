@@ -7,7 +7,7 @@ body{
   background-size: cover;
   height: 100%;
   font-family: sans-serif;
-  animation: mymove 4s ;
+  animation: mymove 3s ;
 }
 hr.style1{ 
   width: 500px;
