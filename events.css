@@ -104,6 +104,7 @@ body::-webkit-scrollbar-thumb {
   color: white;
   font-size: 20px;
   position: absolute;
+  letter-spacing: 1.5px;
   
   top: 35%;
   left: 50%;
@@ -115,6 +116,7 @@ body::-webkit-scrollbar-thumb {
   color: black;
   font-size: 20px;
   position: absolute;
+  letter-spacing: 1.5px;
   
   top: 35%;
   left: 50%;
@@ -226,6 +228,7 @@ body::-webkit-scrollbar-thumb {
       color:whitesmoke;
       text-align: center;
       font-family: cursive;
+      letter-spacing: 2px;
       
   }
 
@@ -293,10 +296,12 @@ body::-webkit-scrollbar-thumb {
     width : 12em;
     background: transparent;
    border: 2px solid lawngreen;
-   font-weight: 600;
+   font-weight: 550;
+   font-size: 12pt;
    border-radius: 80px;
    outline : none;
   color : white;
+  letter-spacing: 2px;
 }
 .size:hover{
   background-color:springgreen;
@@ -477,11 +482,12 @@ body {
   }
   #heading 
   {
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 60px;
-    margin-left: 40px;
+    margin-left: -40px;
     font-family: 'Nosifer', cursive;
     color: white;
+    letter-spacing: 5px;
     
   }
   .overlay1 {
@@ -692,7 +698,8 @@ body {
         color:whitesmoke;
         text-align: center;
         font-family: cursive;
-        
+        font-size: 25pt;
+        letter-spacing: 2px;
     }
   
   /*}
