@@ -125,6 +125,7 @@ position: absolute;
   #map{
   bottom :-100px;
   right : 0px;
+  left :0px;
   position:absolute;
   width 100%;
 }
