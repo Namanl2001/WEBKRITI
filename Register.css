@@ -139,6 +139,7 @@ body::-webkit-scrollbar-thumb {
     body{
         /* transform: scaleX(0.8); */
         margin: 20%;
+        background-size :auto;
     }
     .registrationbox{
         text-align: start;
