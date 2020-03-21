@@ -871,8 +871,8 @@ span.psw {
 @media screen and (max-width: 768px)
 {
   body{
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     background: url('photos/3525580.jpg');
     background-position: center center;
     background-repeat: no-repeat;
