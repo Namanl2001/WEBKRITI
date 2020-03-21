@@ -39,15 +39,15 @@
 		<input id="username"type="text" name="ln" style="@media (max-width: width 768px;){font-size: 15px;}"placeholder="Username" required><br><br>
 
 		 <label for="pass" style="@media (max-width: width 768px;){font-size: 15px;}">Password : </label>
-        <input id="pass" style="@media (max-width: width 768px;){font-size: 15px;}"type="password" name="pass" placeholder="Aa123456" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain (A-Z),(a-z) min. 8 characters" required>
+        <input id="pass" style="@media (max-width: width 768px;){font-size: 15px;}"type="password" name="pass" placeholder="Aa123456" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain (A-Z),(a-z),(0-9); min. 8 characters" required>
         <br><br>
 
 		<label for="passch" style="@media (max-width: width 768px;){font-size: 15px;}">Confirm Password : </label>
-		<input id="passch" style="@media (max-width: width 768px;){font-size: 15px;}"type="password" name="passch" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Enter password ">
+		<input id="passch" style="@media (max-width: width 768px;){font-size: 15px;}"type="password" name="passch" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}" required title="Enter password ">
 		<br><br>
 
 		<input class="cb"type="checkbox" name="agree" required>
-		<label id="tnc" for="tnc">I have accepted the terms and conditions.</label><br><br>
+		<label id="tnc" for="tnc">Keep your User_name private & secure.</label><br><br>
 		<div size="20px" id="mod">
         <div id="but">
 		<input  style="@media (max-width: width 768px;){font-size: 15px;}" type="submit" name="submit" class="size" onclick="checkpassword(),checkdate()">

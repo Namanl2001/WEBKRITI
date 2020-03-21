@@ -6,7 +6,7 @@ body{
     background-size: cover;
     height: 100%;
     font-family: sans-serif;
-    animation: mymove 2.5s ;
+    animation: mymove 1.5s ;
 }
 body::-webkit-scrollbar {
   width: 0.25rem;
@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb {
     background:rgba(0,0,0,0.8);
     width: 33%;
     height: auto;
-    top: 65%;
+    top: 60%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -85,23 +85,26 @@ body::-webkit-scrollbar-thumb {
 }
 .size{
     height :3.5em;
-    width : 9em;
+    width : 10.5em;
     background: transparent;
    border: 2px solid #6666ff;
    font-weight: 600;
+   font-size: 11pt;
    border-radius: 80px;
    outline : none;
   color : white;
+  letter-spacing: 1.5px;
 }
 .size1{
-    height :3em;
-     width : 15em;
+    height :3.5em;
+     width : 15.5em;
      background: transparent;
     border: 1.2px solid white;
     font-weight: 600;
     border-radius: 90px; 
     outline : none;
     color:#1a8cff;
+    letter-spacing: 1.5px;
  }
  .size2{
     height :2.5em;
@@ -182,7 +185,7 @@ body::-webkit-scrollbar-thumb {
         background:rgba(0,0,0,0.8);
         width: 30%;
         height: auto;
-        top: 85%;
+        top: 70%;
         left: 50%;
         position: absolute;
         transform: translate(-50%,-50%);
@@ -221,7 +224,7 @@ body::-webkit-scrollbar-thumb {
     }
     .size{
         height :2.5em;
-        width : 8em;
+        width : 7em;
         background: transparent;
        border: 2px solid #6666ff;
        font-weight: 600;
@@ -230,8 +233,8 @@ body::-webkit-scrollbar-thumb {
       color : white;
     }
     .size1{
-        height :2em;
-         width : 10em;
+        height :2.2em;
+         width : 11.1em;
          background: transparent;
         border: 1.2px solid white;
         font-weight: 600;
