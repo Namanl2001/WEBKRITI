@@ -134,7 +134,7 @@ body::-webkit-scrollbar-thumb {
         width: 20%;
         height: auto;
         top: 60%;
-        left: 30%;
+        left: 40%;
         position: absolute;
         transform: translate(-50%,-50%);
         padding: 20px 30px;
