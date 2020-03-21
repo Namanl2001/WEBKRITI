@@ -321,8 +321,33 @@ label #cancel{
 
   /*position: absolute;*/
 }
-@media screen and (max-width:505px){
-
+@media screen and (max-width:750px){
+  h2{
+    color: rgb(8, 248, 40);
+    top: 25px;
+    margin-left: 68vw;
+    font-family: cursive;
+    position: relative;
+    font-size: 20px;
+  }
+  #prize_money{
+    top: 40px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-left: 65vw;
+    font-size: 20px;
+    position: relative;
+    font-family: cursive;
+    box-sizing: border-box;
+    background: linear-gradient(90deg ,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+    animation: animate 8s linear infinite;
+    box-shadow: yellowgreen;
+    /* left: 40px;
+    top: 25px; */
+  }
 
   .sidebar {
     position: fixed;
