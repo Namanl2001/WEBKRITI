@@ -11,6 +11,37 @@ body{
     /* margin-left: 20vw;
     margin-right: 20vw; */
 }
+h2{
+  color: rgb(8, 248, 40);
+  top: 25px;
+  margin-left: 85vw;
+  font-family: cursive;
+  position: fixed;
+}
+#prize_money{
+  top: 90px;
+  padding: 10px;
+  color: white;
+  margin-left: 85vw;
+  font-size: 24px;
+  position: fixed;
+  font-family: cursive;
+  box-sizing: border-box;
+  background: linear-gradient(90deg ,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  animation: animate 8s linear infinite;
+  box-shadow: yellowgreen;
+  text-align: center;
+}
+@keyframes animate{
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
 #header{
     padding-left: 25%;
     padding-top: 2%;
