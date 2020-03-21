@@ -144,8 +144,8 @@ body::-webkit-scrollbar-thumb {
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: auto;
-        height: 100%;
+        background-size: auto auto;
+        height: auto;
         font-family: sans-serif;
         animation: mymove 2.5s ;
     }
