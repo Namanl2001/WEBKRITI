@@ -151,6 +151,15 @@ padding-bottom: 20px;
   left: 6%;
   position: absolute;
   font-size: 18pt;
-  color:white;
+  color:white;}
+body{
+    background: url('photos/planet.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto auto;
+    height: 100%;
+    font-family: sans-serif;    
 }
+
 }
