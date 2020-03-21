@@ -94,9 +94,11 @@ position: absolute;
 @keyframes date{
   
   0%   {color: white;}
-  25%  {color: yellow;}
-  50%  {color: rgb(11, 155, 165);}
-  100% {color: rgb(9, 204, 9);}
+  20%  {color: yellow;}
+  40%  {color: rgb(11, 155, 165);}
+  60% {color: rgb(9, 204, 9);}
+  80% {color: #e73c7e;}
+  100% {color: white;}
 
 }
 
