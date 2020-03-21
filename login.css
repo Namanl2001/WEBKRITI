@@ -136,7 +136,7 @@ body{
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: auto auto;
   height: 100%;
   font-family: sans-serif;
   animation: mymove 4s ;
