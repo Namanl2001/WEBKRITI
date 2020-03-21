@@ -135,7 +135,7 @@ position: absolute;
     font-size: 16pt;
   }
   .mapouter{position:relative;text-align:right;height:350px;width:380px;}
-.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:380px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:375px;}
 
 #contacts{
 margin: 10px;
