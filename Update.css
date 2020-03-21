@@ -116,7 +116,7 @@ body::-webkit-scrollbar-thumb {
 {
     body{
         background: url('photos/password.jpg');
-        background-position: center center;
+        background-position:auto;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: auto;
