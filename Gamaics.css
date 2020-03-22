@@ -331,19 +331,27 @@ label #cancel{
 @media screen and (max-width:805px){
   h2{
     color: rgb(8, 248, 40);
-    top: 25px;
+    top: 2px;
     margin-left: 68vw;
     font-family: cursive;
     position: relative;
     font-size: 20px;
   }
+  #money{
+  	top:5%;
+  	font-size: 18pt;
+  	position:absolute;
+  	margin-left: 35%;
+  	color:white;
+  	letter-spacing: 1.5px;
+  }
   #prize_money{
-    top: 40px;
+    top: 80px;
     padding: 10px;
     text-align: center;
     color: white;
     margin-left: 65vw;
-    font-size: 20px;
+    font-size: 15px;
     position: relative;
     font-family: cursive;
     box-sizing: border-box;
@@ -393,7 +401,7 @@ label #cancel{
   label #btn{
     position: relative;
     left: 40px;
-    top: 25px;
+    top: 0px;
     font-size: 35px;
     width: 30px;
     height: 30px;
@@ -533,4 +541,3 @@ a:hover span:nth-child(4) {
   transition: 1s;
   transition-delay: 0.75s;
 }
-
