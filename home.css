@@ -56,14 +56,7 @@ right: 0;
 bottom: 0;
 position: absolute;
 }
-#infotsav{
-  font-family: 'Bad Script',cursive; 
-  font-size: 12vw;
-  font-weight: bold;
-  color: #111;
-  /* text-shadow: 
-    0 0 10px #00b3ff */
-}
+
 #infotsav span{
   display: table-cell;
   margin: 0;
@@ -148,6 +141,8 @@ position: absolute;
   /* border-radius: 50px; */
   text-align: center;
   top: 350px;
+  font-weight: bold;
+  color: #111;
   /* border: 5px solid; */
 
 }
@@ -620,7 +615,7 @@ span.psw {
   top: 25%;
   border-radius: 10px;
   background: rgba(18, 156, 152, 0.6);
-  transition: all 1s ease;
+  transition: all .5s ease;
   overflow: auto;
   border: #0066ff double 5px;
   
@@ -642,20 +637,21 @@ span.psw {
   line-height: 50px;
   font-size: 28px;
   color: white;
-  padding-left: 40px;
+  /* padding-left: 40px; */
   box-sizing: border-box;
-  border-bottom: 1px solid black;
+  
   border-top: 1px solid rgba(255,255,255,.1);
   transition: .4s;
   padding-top: 5px;
   display: flex;
+  flex-direction: column;
 }
-.sidebar1 ul :hover
+/* .sidebar1 ul :hover
 {
   color: #000000;
   /* background: #64c24c; */
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-}
+} */
 ul li:hover a{
    padding-left: 78px;
   transition: all 0.75s ease;
@@ -663,6 +659,15 @@ ul li:hover a{
 /* .sidebar ul a .im{
   margin-right: 16px;
 } */
+.sidebar1 ol{
+  color: crimson;
+  padding-left: 20px;
+  font-size: 21px;
+}
+.sidebar1 ol li:hover{
+  background-color: grey;
+  color: whitesmoke;
+}
 #check1{
   display: none;
 }
@@ -678,7 +683,7 @@ label #btn1{
   font-size: 15px;
   background-color: rgb(19, 168, 236);
   border-radius: 10px;
-  transition: all 1s;
+  transition: all .5s;
   text-align: center;
   width: 387px;
   color:white;
@@ -787,14 +792,14 @@ label #cancel1{
   #contacts{
   display: flex;
   flex-direction: column;
-  top: 80%;
-  right: -140px;
+  top: 110%;
+  right: -260px;
   position: absolute;
   /* float: right;  */
   }
   .header{
-    font-size: 50px;
-    color:white;
+    font-size: 70px;
+    color:#111;
     font-family: 'Bungee Inline', cursive;
     box-sizing: border-box;
     width: fit-content;
@@ -802,10 +807,12 @@ label #cancel1{
     /* border-radius: 50px; */
     text-align: center;
     top: 300px;
+    display: flex;
+    flex-direction: column;
   
   }
   .content{
-    font-size:25px;
+    font-size:30px;
     color:rgb(11, 252, 240);
    
     box-sizing: content-box;
@@ -819,13 +826,127 @@ label #cancel1{
   color:white;
   font-family: 'Lobster', cursive;
   box-sizing: border-box;
-  width: 60%;
+  width: 100%;
   /* border: 5px double royalblue; */
   /* border-radius: 50px; */
-  /* top: 300px; */
-  left: 60%;
-  text-align: right;
-  align-self: unset;
+  ;
+  position: relative;
+  padding-left: 30%;
+  margin-top: -30px;
+  border: 5px;
+  /* text-align: right; */
+  /* align-self: unset; */
+  animation: date 4s infinite;
+}
+.sidebar1 {
+  position: fixed;
+  right: -360px;
+  width: 350px;
+  height: 250px;
+  top: 25%;
+  border-radius: 10px;
+  background: rgba(18, 156, 152, 1);
+  transition: all .5s ease;
+  overflow: auto;
+  border: #0066ff double 5px;
+  
+}
+.sidebar1 header {
+  font-size: 28px;
+  font-family: 'Monoton', cursive;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: black;
+  user-select: none;
+}
+.sidebar1 ul {
+  display: block;
+  height: 100%;
+  font-family: 'Righteous', cursive;
+  width: 100%;
+  line-height: 50px;
+  font-size: 28px;
+  color: white;
+  /* padding-left: 40px; */
+  box-sizing: border-box;
+  
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+/* .sidebar1 ul :hover
+{
+  color: #000000;
+  /* background: #64c24c; */
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+} */
+ul li:hover a{
+   padding-left: 78px;
+  transition: all 0.75s ease;
+}
+/* .sidebar ul a .im{
+  margin-right: 16px;
+} */
+.sidebar1 ol{
+  color: crimson;
+  padding-left: 20px;
+  font-size: 21px;
+}
+.sidebar1 ol li:hover{
+  background-color: grey;
+  color: whitesmoke;
+}
+#check1{
+  display: none;
+}
+label #btn1,label #cancel1{
+  position: absolute;
+  /* background: #042331; */
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn1{
+  right: -350px;
+  top: 360px;
+  font-size: 15px;
+  background-color: rgb(19, 168, 236);
+  border-radius: 10px;
+  transition: all .5s;
+  text-align: center;
+  width: 265px;
+  color:white;
+  height: 20px;
+  transform: rotate( -90deg);
+}
+
+label #cancel1{
+  z-index: 1111;
+  right: -280px;
+  top: 35%;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+#check1:checked ~ .sidebar1{
+  right: 0;
+}
+#check1:checked ~ label #btn1{
+  right: 8px;
+  
+}
+#check1:checked ~ label #cancel1{
+  right: 280px;
+  display: block;
+}
+#check1:checked ~ section{
+  margin-left: 250px;
 }
 
   
@@ -835,9 +956,9 @@ label #cancel1{
   }
   .cas{
   
-    display:flex; flex-direction:column;margin-left:10%;margin-top: 80px;
+    display:flex; flex-direction:column;margin-left:5%;margin-top: 80px;
     position: absolute;
-    left: 10%;
+    left: 5%;
      top: 10%;; 
     margin: 20px;
   }
@@ -1199,7 +1320,7 @@ label #cancel1{
       position: absolute;
        /* background: linear-gradient(to bottom right, #800000 0%, #0066ff 142%); */
       /* background-color: rgba(0,0,0,1); */
-      top: 85%;
+      top: 115%;
       left: 25px;
       
     }
@@ -1344,7 +1465,7 @@ label #cancel1{
     pointer-events: none;
   }
   #check:checked ~ label #cancel{
-    left: 98%;
+    left: 125%;
   }
   #check:checked ~ section{
     margin-left: 250px;
