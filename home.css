@@ -877,14 +877,14 @@ label #cancel1{
     cursor: pointer;
   }
   label #btn1{
-    right: -255px;
-    top: 46%;
+    right: -260px;
+    top: 44%;
     font-size: 15px;
     background-color: rgb(19, 168, 236);
     border-radius: 10px;
     transition: all .5s;
     text-align: center;
-    width: 300px;
+    width: 330px;
     color:white;
     height: 20px;
     transform: rotate( -90deg);
@@ -906,7 +906,7 @@ label #cancel1{
     right: 0;
   }
   #check1:checked ~ label #btn1{
-    right: 103px;
+    right: 97px;
     
   }
   #check1:checked ~ label #cancel1{
@@ -979,7 +979,7 @@ label #cancel1{
   }
   #date
  {
-  font-size: 40px;
+  font-size: 30px;
   color:white;
   font-family: 'Lobster', cursive;
   box-sizing: border-box;
@@ -989,7 +989,7 @@ label #cancel1{
   ;
   position: relative;
   padding-left: 30%;
-  margin-top: -40px;
+  margin-top: 0px;
   border: 5px;
   /* text-align: right; */
   /* align-self: unset; */
@@ -1003,7 +1003,7 @@ label #cancel1{
   }
   .cas{
   
-    display:flex; flex-direction:column;margin-left:5%;margin-top: 80px;
+    display:flex; flex-direction:column;margin-left:25%;margin-top: 120px;
     position: absolute;
     left: 8%;
      top: 10%;; 
@@ -1358,8 +1358,8 @@ label #cancel1{
   
   
     #boxy{
-      width: 23%;
-      height: 25%;
+      width: 60%;
+      height: 35%;
       display: block;
      /* border: 10px double black; */
       color:white;
@@ -1387,7 +1387,7 @@ label #cancel1{
       display: block;
       /*color:rgb(77, 129, 228);*/
       color:white;
-      /* padding: 12px 14px; */
+       
       text-decoration: wavy;
       font-size: 20pt;
       font-family: cursive;
@@ -1400,6 +1400,7 @@ label #cancel1{
   .li1 .a1.active {
       background-color:rgb(77, 129, 228);
       color: white;
+      padding-left: 20px;
     }
     
   .li1 .a1:hover:not(.active) {
@@ -1446,8 +1447,8 @@ label #cancel1{
     font-family: 'Monoton', cursive;
     color: white;
     line-height: 70px; 
-    text-align: center;
-    padding-left: 0;
+    text-align: none;
+    margin-left: 0px;
     background: black;
     user-select: none;
   }
@@ -1495,7 +1496,7 @@ label #cancel1{
   }
   label #cancel{
     z-index: 1111;
-    left: -280px;
+    left: -200px;
     top: 14px;
     font-size: 30px;
     color: #0a5275;
@@ -1513,7 +1514,7 @@ label #cancel1{
     pointer-events: none;
   }
   #check:checked ~ label #cancel{
-    left: 98%;
+    left: 74%;
   }
   #check:checked ~ section{
     margin-left: 250px;
