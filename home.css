@@ -55,6 +55,86 @@ right: 0;
 bottom: 0;
 position: absolute;
 }
+
+
+
+#infotsav span{
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  animation: infoa 2.20s linear infinite;
+}
+#infotsav span:nth-child(1)
+{
+  animation-delay: 0s ;
+  /* text-shadow:  */
+    /* 0 0 10px #00b3ff */
+}
+#infotsav span:nth-child(2)
+{
+  animation-delay: 0.2s;
+}
+#infotsav span:nth-child(3)
+{
+  animation-delay: 0.4s;
+}
+#infotsav span:nth-child(4)
+{
+  animation-delay: 0.6s;
+}
+#infotsav span:nth-child(5)
+{
+  animation-delay: 0.8s;
+}
+#infotsav span:nth-child(6)
+{
+  animation-delay: 1s;
+}
+#infotsav span:nth-child(7)
+{
+  animation-delay: 1.2s;
+}
+#infotsav span:nth-child(8)
+{
+  animation-delay: 1.4s;
+}
+#infotsav span:nth-child(9)
+{
+  animation-delay: 1.6s;
+}
+#infotsav span:nth-child(10)
+{
+  animation-delay: 1.8s;
+}
+#infotsav span:nth-child(11)
+{
+  animation-delay: 2s;
+}
+@keyframes infoa{
+  0%,100%
+  {
+    color:#fff;
+    filter:blur(1px);
+    text-shadow: 0 0 10px #00b3ff,
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff,
+    0 0 80px #00b3ff,
+    0 0 120px #00b3ff,
+    0 0 200px #00b3ff,
+    0 0 300px #00b3ff,
+    0 0 400px #00b3ff,
+    0 0 500px #00b3ff,
+    0 0 600px #00b3ff,
+    0 0 700px #00b3ff;
+  }
+  5%,95%
+  {
+    color:white;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+}
+
 .header{
   font-size: 05em;
   color:white;
@@ -65,8 +145,6 @@ position: absolute;
   /* border-radius: 50px; */
   text-align: center;
   top: 350px;
-  font-weight: bold;
-  color: #111;
   /* border: 5px solid; */
 
 }
@@ -496,12 +574,13 @@ span.psw {
   width: 80%; /* Could be more or less, depending on screen size */
 } */
 
+
 /* The Close Button (x) */
 .close {
   position: absolute;
   right: 25px;
   top: 0;
-  color: #000;
+  color:white;
   font-size: 35px;
   font-weight: bold;
 }
@@ -553,6 +632,7 @@ span.psw {
   background: black;
   user-select: none;
 }
+
 .sidebar1 ul {
   display: block;
   height: 100%;
@@ -589,7 +669,7 @@ ul li:hover a{
   font-size: 21px;
 }
 .sidebar1 ol li:hover{
-  background-color: grey;
+  
   color: whitesmoke;
 }
 #check1{
@@ -661,6 +741,17 @@ label #cancel1{
      width: 100%;
   }
 } */
+.sidebar1::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.sidebar1::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+.sidebar1::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
 @media screen and (max-width: 768px)
 {
   body{
@@ -713,17 +804,161 @@ label #cancel1{
   display: none;
   
   }
+
+  .sidebar1 {
+    position: fixed;
+    right: -360px;
+    width: 350px;
+    height: 35%;
+    top: 17%;
+    border-radius: 10px;
+    background: rgba(18, 156, 152, 1);
+    transition: all .5s ease;
+    overflow: auto;
+    border: #0066ff double 5px;
+    
+  }
+  .sidebar1 header {
+    font-size: 28px;
+    font-family: 'Monoton', cursive;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: black;
+    user-select: none;
+  }
+  
+  .sidebar1 ul {
+    display: block;
+    height: 100%;
+    font-family: 'Righteous', cursive;
+    width: 100%;
+    line-height: 50px;
+    font-size: 28px;
+    color: white;
+    /* padding-left: 40px; */
+    box-sizing: border-box;
+    
+    border-top: 1px solid rgba(255,255,255,.1);
+    transition: .4s;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  /* .sidebar1 ul :hover
+  {
+    color: #000000;
+    /* background: #64c24c; 
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  } */
+  ul li:hover a{
+     padding-left: 78px;
+    transition: all 0.75s ease;
+  }
+  /* .sidebar ul a .im{
+    margin-right: 16px;
+  } */
+  .sidebar1 ol{
+    color: crimson;
+    padding-left: 20px;
+    font-size: 21px;
+  }
+  .sidebar1 ol li:hover{
+    
+    color: whitesmoke;
+  }
+  #check1{
+    display: none;
+  }
+  label #btn1,label #cancel1{
+    position: absolute;
+    /* background: #042331; */
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  label #btn1{
+    right: -255px;
+    top: 46%;
+    font-size: 15px;
+    background-color: rgb(19, 168, 236);
+    border-radius: 10px;
+    transition: all .5s;
+    text-align: center;
+    width: 300px;
+    color:white;
+    height: 20px;
+    transform: rotate( -90deg);
+  }
+  
+  label #cancel1{
+    z-index: 1111;
+    right: -280px;
+    top: 30%;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+    width: 40px;
+    height: 40px;
+    display: none;
+  }
+  #check1:checked ~ .sidebar1{
+    right: 0;
+  }
+  #check1:checked ~ label #btn1{
+    right: 103px;
+    
+  }
+  #check1:checked ~ label #cancel1{
+    right: 280px;
+    display: block;
+  }
+  #check1:checked ~ section{
+    margin-left: 250px;
+  }
+  .icon
+  {
+    width: 40px;
+    height: 40px;
+  
+  
+    /*position: absolute;*/
+  }
+  
+  
+  /* Change styles for span and cancel button on extra small screens */
+  /* @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  } */
+  .sidebar1::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  .sidebar1::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  .sidebar1::-webkit-scrollbar-thumb {
+    background: #6649b8;
+  }
+
   #contacts{
   display: flex;
   flex-direction: column;
-  top: 110%;
-  right: -260px;
+  top: 80%;
+  right: -140px;
   position: absolute;
   /* float: right;  */
   }
   .header{
-    font-size: 70px;
-    color:#111;
+    font-size: 50px;
+    color:white;
     font-family: 'Bungee Inline', cursive;
     box-sizing: border-box;
     width: fit-content;
@@ -731,22 +966,20 @@ label #cancel1{
     /* border-radius: 50px; */
     text-align: center;
     top: 300px;
-    display: flex;
-    flex-direction: column;
   
   }
   .content{
-    font-size:30px;
+    font-size:25px;
     color:rgb(11, 252, 240);
-   
+  
     box-sizing: content-box;
-    width: 100%;
+    width: 98%;
     animation: mymove 5s;
   
   }
   #date
-{
-  font-size: 30px;
+ {
+  font-size: 40px;
   color:white;
   font-family: 'Lobster', cursive;
   box-sizing: border-box;
@@ -756,122 +989,12 @@ label #cancel1{
   ;
   position: relative;
   padding-left: 30%;
-  margin-top: -30px;
+  margin-top: -40px;
   border: 5px;
   /* text-align: right; */
   /* align-self: unset; */
   animation: date 4s infinite;
-}
-.sidebar1 {
-  position: fixed;
-  right: -360px;
-  width: 350px;
-  height: 250px;
-  top: 25%;
-  border-radius: 10px;
-  background: rgba(18, 156, 152, 1);
-  transition: all .5s ease;
-  overflow: auto;
-  border: #0066ff double 5px;
-  
-}
-.sidebar1 header {
-  font-size: 28px;
-  font-family: 'Monoton', cursive;
-  color: white;
-  line-height: 70px;
-  text-align: center;
-  background: black;
-  user-select: none;
-}
-.sidebar1 ul {
-  display: block;
-  height: 100%;
-  font-family: 'Righteous', cursive;
-  width: 100%;
-  line-height: 50px;
-  font-size: 28px;
-  color: white;
-  /* padding-left: 40px; */
-  box-sizing: border-box;
-  
-  border-top: 1px solid rgba(255,255,255,.1);
-  transition: .4s;
-  padding-top: 5px;
-  display: flex;
-  flex-direction: column;
-}
-/* .sidebar1 ul :hover
-{
-  color: #000000;
-  /* background: #64c24c; */
-  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-} */
-ul li:hover a{
-   padding-left: 78px;
-  transition: all 0.75s ease;
-}
-/* .sidebar ul a .im{
-  margin-right: 16px;
-} */
-.sidebar1 ol{
-  color: crimson;
-  padding-left: 20px;
-  font-size: 21px;
-}
-.sidebar1 ol li:hover{
-  background-color: grey;
-  color: whitesmoke;
-}
-#check1{
-  display: none;
-}
-label #btn1,label #cancel1{
-  position: absolute;
-  /* background: #042331; */
-  border-radius: 3px;
-  cursor: pointer;
-}
-label #btn1{
-  right: -350px;
-  top: 360px;
-  font-size: 15px;
-  background-color: rgb(19, 168, 236);
-  border-radius: 10px;
-  transition: all .5s;
-  text-align: center;
-  width: 265px;
-  color:white;
-  height: 20px;
-  transform: rotate( -90deg);
-}
-
-label #cancel1{
-  z-index: 1111;
-  right: -280px;
-  top: 35%;
-  font-size: 30px;
-  color: #0a5275;
-  padding: 4px 9px;
-  transition: all .5s ease;
-  width: 40px;
-  height: 40px;
-  display: none;
-}
-#check1:checked ~ .sidebar1{
-  right: 0;
-}
-#check1:checked ~ label #btn1{
-  right: 8px;
-  
-}
-#check1:checked ~ label #cancel1{
-  right: 280px;
-  display: block;
-}
-#check1:checked ~ section{
-  margin-left: 250px;
-}
+ }
 
   
   .na{
@@ -882,9 +1005,9 @@ label #cancel1{
   
     display:flex; flex-direction:column;margin-left:5%;margin-top: 80px;
     position: absolute;
-    left: 5%;
+    left: 8%;
      top: 10%;; 
-    margin: 20px;
+    margin: 0px;
   }
   
   #boxz{
@@ -1244,7 +1367,7 @@ label #cancel1{
       position: absolute;
        /* background: linear-gradient(to bottom right, #800000 0%, #0066ff 142%); */
       /* background-color: rgba(0,0,0,1); */
-      top: 115%;
+      top: 85%;
       left: 25px;
       
     }
@@ -1311,8 +1434,8 @@ label #cancel1{
   }
   .sidebar {
     position: fixed;
-    left: -100%;
-    width: 100%;
+    left: -70%;
+    width: 70%;
     height: 100%;
     top: 0;
     background: rgba(46,122,120,0.9);
@@ -1322,8 +1445,9 @@ label #cancel1{
     font-size: 32px;
     font-family: 'Monoton', cursive;
     color: white;
-    line-height: 70px;
+    line-height: 70px; 
     text-align: center;
+    padding-left: 0;
     background: black;
     user-select: none;
   }
@@ -1333,9 +1457,9 @@ label #cancel1{
     font-family: 'Righteous', cursive;
     width: 100%;
     line-height: 80px;
-    font-size: 32px;
+    font-size: 28px;
     color: white;
-    padding-left: 120px;
+    padding-left: 30px;
     box-sizing: border-box;
     border-bottom: none;
     border-top:  none;
@@ -1389,7 +1513,7 @@ label #cancel1{
     pointer-events: none;
   }
   #check:checked ~ label #cancel{
-    left: 125%;
+    left: 98%;
   }
   #check:checked ~ section{
     margin-left: 250px;
