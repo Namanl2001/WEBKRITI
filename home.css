@@ -136,7 +136,7 @@ position: absolute;
 }
 
 .header{
-  font-size: 05em;
+  font-size: 5.5em;
   color:white;
   font-family: 'Bungee Inline', cursive;
   box-sizing: border-box;
@@ -153,14 +153,14 @@ position: absolute;
   color:rgb(11, 252, 240);
  
   box-sizing: content-box;
-  width: 60%;
+  width: 70%;
   animation: mymove 5s;
   border: 5px;
   margin: 20px;
 }
 #date
 {
-  font-size: 70px;
+  font-size: 50px;
   color:white;
   font-family: 'Lobster', cursive;
   box-sizing: border-box;
