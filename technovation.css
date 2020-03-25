@@ -335,13 +335,22 @@ label #cancel{
     position: relative;
     font-size: 20px;
   }
+  
+  #money{
+    top:5%;
+    font-size: 18pt;
+    position:absolute;
+    margin-left: 35%;
+    color:white;
+    letter-spacing: 1.5px;
+  }
   #prize_money{
-    top: 40px;
+    top: 80px;
     padding: 10px;
     text-align: center;
     color: white;
     margin-left: 65vw;
-    font-size: 20px;
+    font-size: 15px;
     position: relative;
     font-family: cursive;
     box-sizing: border-box;
@@ -391,7 +400,7 @@ label #cancel{
   label #btn{
     position: relative;
     left: 40px;
-    top: 25px;
+    top: 0px;
     font-size: 35px;
     width: 30px;
     height: 30px;
@@ -435,9 +444,10 @@ label #cancel{
 
 .content
 {
+  top:65px;
   margin-left: 7vw;
     margin-right: 3vw;
-position: inherit;
+position: absolute;
 }
 #text{
     font-size: 25px;
