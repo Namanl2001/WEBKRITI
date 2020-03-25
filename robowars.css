@@ -430,6 +430,7 @@ label #cancel{
     /*position: absolute;*/
   }
   #header{
+
     padding-left: 15%;
     padding-top: 15%;
     padding-right: 45%;
@@ -451,6 +452,7 @@ position: inherit;
     color: black;
 }
 .Description{
+	
     font-size: 20px; 
     font-family: cursive;
     color: white;
