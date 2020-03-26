@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robowars</title>
+    
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Barlow+Condensed|Monoton&display=swap" rel="stylesheet">
+    <meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/robowars.css">
+</head>
+<body>
+    <div>
+		<h2 id="money">Prizes Worth</h2>
+		<div id="prize_money">75,000 INR</div>
+	</div>
+    <input type="checkbox" id="check">
+<label for="check">
+  <img src="/photos/menu.png" id="btn">
+  <img src="/photos/cancel.png" id="cancel">
+</label>
+<div class="sidebar">
+    <header>INFOTSAV'20</header>
+    <ul>
+    
+        <li><a href="/home"><img src="/photos/home (1).png" class="icon">&nbsp &nbsp Home</a></li>
+        <li><a href="/events"><img src="/photos/checklist.png" class="icon">&nbsp &nbsp Events</a></li>
+        <li><a href="/sponsors" target="_blank"><img src="/photos/bank.png" class="icon">&nbsp &nbsp Sponsors</a></li>
+        <li><a href="/about" target="_blank"><img src="/photos/faq.png" class="icon">&nbsp &nbsp About us</a></li>
+        
+        <li><a href="/contact_us" target="_blank"><img src="/photos/email.png" class="icon">&nbsp &nbsp Contact us</a></li>
+        <% var t; %>
+		<%if(t==0) {%><li><a href="/users/login"><img src="/photos/add-user.png" class="icon">&nbsp &nbsp Login/Signup</a></li><%}%>
+              <%if(t==1) {%> <li><a href="/users/delete"><img src="/photos/account.png" class="icon">&nbsp &nbsp Delete account</a></li>
+                <li><a href="/users/logout"><img src="/photos/logout.png" class="icon">&nbsp &nbsp Log out</a></li>
+              <%}%>
+    </ul>
+</div>
+    <div class="content">
+    <h1 id="header">Robowars</h1>
+    <br>
+    <br><br>
+    <h3>About</h3>
+    <div class="Description">
+        The ultimate test of engineering excellence, teamwork, strategy, and gaming is here! Infotsav brings to you its flagship event, Robowars. Witness the brightest engineers in India build the mightiest monsters which shall unleash Armageddon on the battle turf!
+Each team has to come up with a wirelessly controlled robot capable of a one on one and trio combat. With pneumatic pincers, mighty armors, nifty axes and more innovative weapons, these merciless mercenaries shall fight for the glory of their makers, upholders of the dignity of their institutions. The law of the jungle, of 'might is right,' shall prevail. Only the toughest shall survive! Sparks shall fly, and temperatures shall soar high this Infotsav’20! Be there to witness the raw aggression, the crude violence of these mean machines as they rip each other apart!
+    </div>
+    <br>
+    <br><br>
+    <h3>General Rules</h3>
+    <ul class="Description">
+        <li>
+            Each team can have a maximum of 6 participants.
+        </li>
+        <li>
+            A team may consist of students from different colleges.
+        </li>
+        <li>
+            Teams will be selected on the basis of the abstract submitted.
+        </li>
+        <li>
+            Certificates of Excellence will be awarded to the top three teams.
+        </li>
+        <li>
+            Any team if asked will have to change its wireless module frequency/coded channel, to avoid clashes with the opposite teams.
+        </li>
+        <li>
+            If there is any ambiguity in the selection of the weapon systems, please clarify the same with the event organizers to avoid further confusion.
+        </li>
+        <li>
+            If the organizers doubt the safety of viewers due to a particular bot, then that team might be denied participation.
+        </li>
+        <li>
+            The bot is not allowed to leave anything behind during the run. It should not leave any mark on the arena.
+        </li>
+        <li>
+            The time measured by the organizers will be final and will be used for scoring the teams. Time measured by the contestant by any means will not be considered for scoring.
+        </li>
+        <li>
+            In case of any disputes/discrepancies, the organizers’ decision will be final and binding. The organizers reserve the right to change/alter any of the above rules as they deem fit. 
+        </li>
+        <li>
+            Changes in rules, if any will be highlighted on the website and notified to the teams.
+        </li>
+    </ul>
+    <br>
+    <br><br>
+    <h3>Abstract</h3>
+    <p class="Description">
+        Once registered, in order to qualify for the event, all the participants need to submit a PDF document of the abstract .
+    </p>
+    <br>
+    <h5>Note:</h5>
+    <ul class="Description">
+        <li>Abstract can be submitted only once from team leader’s dashboard.</li>
+        <li>Abstract should be of size less than 3MB in .pdf format.</li>
+        <li>Team leader have to confirm Tech ID of all registered member before submitting the abstract.</li>
+        <li>If you have not been able to submit the abstract by the deadline, contact the managers. The late submission will be accepted only if the reason for the same is found legit.</li>
+    </ul>
+    <br>
+    <br><br>
+    <h3>Updates</h3><br>
+    <h5>Submission</h5>
+    <p class="Description"> First Top 15 best abstract submission will be released on Infotsav's official facebook page.</p><br>
+    <h5>Deadline</h5>
+    <p class="Description">Registration deadline is 10th of April, 2020. </p>
+    <br>
+    <br>
+    <a href="/users/register" class="neon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Register
+     </a>
+    <br>
+    <br>
+    </div>
+</body>
+</html>

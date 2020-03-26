@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Home
+	</title>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Pacifico|Righteous&display=swap" rel="stylesheet">
+	<meta charset="utf-8" name="viewport"  content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Lobster+Two|Nosifer|Oleo+Script|Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Barlow+Condensed|Monoton&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/public/home.css">
+</head>
+<body>
+	<% var f,d ; %>
+	<% if(f==1) {%>
+		<div id="hello"><p >HELLO !! <%= name[0].full_name %> </p></div>   <%}%>
+
+		<% if(d==1){%>
+			<script>alert("Account deleted successfully !!");</script>
+			<%}%>
+
+	<div id="bo">
+
+<div id="contacts">
+	<a class="na" href="https://www.facebook.com/Infotsav" target=_blank; ><img src="/photos/facebook.png" height="50px" width="50px"></a>
+<a class="na"href="https://www.instagram.com/infotsav19/?hl=en"target=_blank; ><img src="/photos/instagram.png" width="50px" height="50px"></a>
+<a class="na"href="https://www.linkedin.com/company/infotsav-iiit-gwalior"target=_blank; ><img src="/photos/linkedin.png" width="50px" height="50px"></a>
+<a class="na"href="https://twitter.com/infotsav_iiitm?"target=_blank; ><img src="/photos/twitter.png" width="50px" height="50px"></a>
+</div>
+<br>
+<div id="newuser">
+	
+	<% if(f===0){%>
+	 <a href="/users/login"><button class="size">Login</button></a> 
+	 <a href="/users/signUp"><button class="size">Sign Up</button></a> <% }%>
+	 <% if(f===1){ %>
+	 <a href="/users/logout"><button class="size">Logout</button></a>  <% }%>
+
+</div>
+
+<div id="boxy">
+	<ul class="ul1">
+		<li class="li1" ><a class="a1" href="/event/technovation"><strong>Technovation</strong></a></li>
+	<li class="li1"><a class="a1" href="/event/robowars"><strong>Robowars</strong> </a></li>
+	<li class="li1"><a class="a1" href="/event/entrepreneurial_event"><strong> Entrepreneurship</strong></a></li>
+	<li class="li1"><a class="a1" href="/event/software_corner"><strong> Software Corner</strong></a></li>
+	<li class="li1"><a class="a1"  href="/event/gamiacs"><strong>Gamiacs</strong></a></li>
+	
+</ul>	
+</div>
+
+<div class="cas">
+	
+	<div class="header" >
+		<div id="infotsav">
+		<span>I</span>
+		<span>n</span>
+		<span>f</span>
+		<span>o</span>
+		<span>t</span>
+		<span>s</span>
+		<span>a</span>
+		<span>v</span>
+		<span>'</span>
+		<span>2</span>
+		<span>0</span>
+		</div>
+	
+	<div id="date"><span>
+		 10-12 APRIL
+
+	</span><br></div></div>
+	<div class="content">"INFOTSAV is the Techno-Managerial festival of ABV-IIITM Gwalior. It is the largest techno-managerial fest of central India. Infotsav is a platform which gives a competitive and healthy atmosphere to compete, develop and nourish the creativity and innovation."</div>
+	
+</div>
+
+
+<input type="checkbox" id="check">
+<label for="check">
+  <img src="/photos/menu.png" id="btn">
+  <img src="/photos/cancel.png" id="cancel">
+</label>
+<div class="sidebar">
+    <header>INFOTSAV'20</header>
+  <ul>
+    
+    <li><a href="/home"><img src="/photos/home (1).png" class="icon">&nbsp &nbsp Home</a></li>
+	<li><a href="/events"><img src="/photos/checklist.png" class="icon">&nbsp &nbsp Events</a></li>
+	<li><a href="/sponsors" target="_blank"><img src="/photos/bank.png" class="icon">&nbsp &nbsp Sponsors</a></li>
+    <li><a href="/about" target="_blank"><img src="/photos/faq.png" class="icon">&nbsp &nbsp About us</a></li>
+    
+	<li><a href="/contact_us" target="_blank"><img src="/photos/email.png" class="icon">&nbsp &nbsp Contact us</a></li>
+	<%if(f==0) {%><li><a href="/users/login"><img src="/photos/add-user.png" class="icon">&nbsp &nbsp Login/Signup</a></li><%}%>
+              <%if(f==1) {%> <li><a href="/users/delete"><img src="/photos/account.png" class="icon">&nbsp &nbsp Delete account</a></li>
+                <li><a href="/users/logout"><img src="/photos/logout.png" class="icon">&nbsp &nbsp Log out</a></li>
+              <%}%>
+</ul>
+</div>
+<input type="checkbox" id="check1" >
+<label for="check1" >
+  <div id="btn1" ><span id="llj">SCHEDULE</span></div>
+  
+</label>
+<div class="sidebar1">
+    <header>SCHEDULE</header>
+	<ul>
+		<li>10th APRIL</li>
+		<ol>
+			<li>Robowars: 10AM</li>
+			<li>Gamiacs :  3PM</li></ol>
+		<li>11th APRIL</li>
+		<ol>
+			<li>Entrepreneurial Events : 10AM</li>
+			<li>Software Corner :  3PM</li></ol>
+		<li>12th APRIL</li>
+		<ol>
+			<li>Technovation : 10AM</li>
+			</ol>
+</div>
+
+
+</div>
+
+</body>
+
+
+</html>

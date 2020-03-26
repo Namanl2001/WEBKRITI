@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <meta charset="utf-8"  content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" type="text/css" href="/public/register.css">
+</head>
+<body>
+    <% var r;%>
+	<% if(r==1){%>
+		<script>alert("Already registered for this event");</script>
+		<%}%>
+    <div class="registrationbox">
+        <h1 style="text-align:center;font-family:cursive;";>Register Here</h1>
+    <form action="/users/register" method="post" id="register">
+        <label for="event">Event :     </label>
+    
+        <select name="event_id" id="event" class="size1">
+            <option value="a">Entrepreneurial Events</option>
+            <option value="b">Gamiacs</option>
+            <option value="c">Robowars</option>
+            <option value="d">Software Corner</option>
+            <option value="e">Technovation</option>
+        </select>
+        <br>
+        <br>
+        <label for="college">College :</label>
+        <br>
+        <input  type="text" name="clg_name" placeholder="College Name" title="Enter Your College Name " id="college" required>
+
+        <br>
+        <br>
+        <label for="full_name">Full Name :</label>
+        <br>
+        <input type="text" name="fname" id="team_head" placeholder="Full Name " title="Enter full Name" required>
+        <br>
+        <br>
+        <label for="phone">Contact No.:</label>
+        <br>
+        <input id="phone"type="text" name="phone" pattern="[0-9]{10}" title="Enter contact number" placeholder="0123456789" required>
+        <br>
+        <br><br>
+        <input class="cb"type="checkbox" name="agree" required>
+		<label id="tnc" for="tnc">You can register for this event only once.</label><br><br>
+		<div size="20px" id="mod">
+        <div id="ll">
+        <input type="submit" name="submit" class="size" >
+        <input type="reset" class="size" >
+        </div>
+    </form>
+</div>
+</body>
+</html>
