@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>َAnimated Login Form</title>
+    <link rel="stylesheet" href="/public/login.css">
+  </head>
+  <body>
+    <% var d,l;%>
+    <% if(d==5){%>
+      <script>alert("Account Created successfully");</script>
+      <%}%>
+      <% if(l==2){%>
+        <script>alert("User does not Exist");</script>
+        <%}%>
+        <% if(l==1){%>
+          <script>alert("Incorrect Password");</script>
+          <%}%>
+          <% if(l==3){%>
+            <script>alert("Password Updated successfully !!");</script>
+            <%}%>
+            <% if(l==4){%>
+              <script>alert("You are not Logged in !!");</script>
+              <%}%>
+<div class="box">
+<form method="post" action="/users/login" id="myform"  >
+  <h1 style="color: white;font-family:cursive;">Login</h1><br>
+    <input type="text" name="email" placeholder="Email id" autocomplete="off" required>
+  <input type="password" name="password" placeholder="Password" required>
+   <a href="update_password" class="fp" class="sp" >Forgot Password?</a><br><br>
+  <input type="submit" name="" value="Login">
+  
+</form>
+
+<hr class="style1">
+  <h4 class="sp">Not have an account yet?</h4>
+  <a href="signUp"><button class="size">Sign Up</button></a>
+
+</div>
+
+
+  </body>
+</html>

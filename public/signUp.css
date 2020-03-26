@@ -1,0 +1,246 @@
+body{
+    background: url('photos/3525580.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    font-family: sans-serif;
+    animation: mymove 2.5s ;
+}
+@keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  .registrationbox{
+    text-align: start;
+    background:rgba(0,0,0,0.6);
+    width: 33%;
+    height: auto;
+    top: 70%;
+    left: 50%;
+
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 40px 30px;
+    box-sizing: border-box;
+    border-radius: 80px;
+    
+    min-width: 350px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    color: white;
+    border-width: 5px;
+    border-style: double;
+    border-color:rgb(18, 66, 224);
+    font-weight: bold;
+}
+
+#mod{
+    align-self: center;
+    padding-left: 1%;
+}
+.registrationbox input[type="text"],input[type="email"],input[type="password"]{
+   width: 100%;
+   border: none;
+   border-bottom: 1px solid white;
+   background: transparent;
+   padding-left: 5px;
+   outline: none;
+   height: 40px;
+   color:#1a8cff;
+   font-size: 16px;
+}
+.registrationbox input[type="submit"]:hover,input[type="reset"]:hover
+{
+	cursor: pointer;
+	background: #6666ff;
+}
+.radio{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.registrationbox ::placeholder{
+    color: gray;
+}
+/*changin the font-size of term and condition line*/
+#tnc{   
+font-size: 17.5px;
+}
+/*changin th size of checkbox*/
+input.cb {
+    width : 20px;
+    height : 20px;
+}
+/*size of buttons*/
+.size{
+    height :3.5em;
+    width : 10em;
+    background: transparent;
+   border: 2px solid #6666ff;
+   font-weight: 600;
+   border-radius: 80px;
+   outline : none;
+  color : white;
+  letter-spacing: 2px;
+  font-size: 12pt;
+
+}
+/*size of dob buttons*/
+.size1{
+   height :2.5em;
+    width : 7em;
+    background: transparent;
+   border: 1.2px solid white;
+   font-weight: 600;
+   border-radius: 90px; 
+   outline : none;
+   color:#1a8cff;
+   letter-spacing: 2px;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px black inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #1a8cff;
+}
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px white inset;
+    -webkit-text-fill-color: #1a8cff;
+}
+#user{
+	width: 150px;
+	height:150px;
+	border-radius:50%;
+	position: absolute;
+    top: 0px;
+    left:100px;
+	margin-top:5px;
+    align-self: center;
+    
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+#but{
+    margin-left: 13%;
+    
+}
+@media (max-width :768px)
+{
+    body{
+        /* transform: scaleX(0.8); */
+        margin: 20%;
+        background-size :auto;
+    }
+    .registrationbox{
+        text-align: start;
+        background:rgba(0,0,0,0.6);
+        width: 150px;
+        /* height: 500px; */
+        top: 70%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        padding: 20px 15px;
+        box-sizing: border-box;
+        border-radius: 40px;
+        /* margin: 30px; */
+        /* min-width: 350px; */
+        /* margin: 30px; */
+        margin-bottom: 35px;
+        color: white;
+        border-width: 5px;
+        border-style: double;
+        border-color:rgb(18, 66, 224);
+        font-weight: bold;
+        /* transform: scale(0.9); */
+    }
+    
+    #mod{
+        align-self: center;
+        padding-left: 1%;
+    }
+    .registrationbox input[type="text"],input[type="email"],input[type="password"]{
+       width: 100%;
+       border: none;
+       border-bottom: 1px solid white;
+       background: transparent;
+       padding-left: 5px;
+       outline: none;
+       height: 20px;
+       color:#1a8cff;
+       font-size: 16px;
+    }
+    .registrationbox input[type="submit"]:hover,input[type="reset"]:hover
+    {
+        cursor: pointer;
+        background: #6666ff;
+    }
+    .radio{
+        font-size: 15pt;
+    }
+    .registrationbox ::placeholder{
+        color: gray;
+    }
+    /*changin the font-size of term and condition line*/
+    #tnc{   
+    font-size: 17.5px;
+    }
+    /*changin th size of checkbox*/
+    input.cb {
+        width : 20px;
+        height : 20px;
+    }
+    /*size of buttons*/
+    .size{
+        height :2.5em;
+        width : 7em;
+        background: transparent;
+       border: 2px solid #6666ff;
+       font-weight: 500;
+       border-radius: 80px;
+       outline : none;
+      color : white;
+    }
+    /*size of dob buttons*/
+    .size1{
+       height :2em;
+        width : 5.5em;
+        background: transparent;
+       border: 1.2px solid white;
+       font-weight: 550;
+       font-size: 10pt;
+       border-radius: 90px; 
+       outline : none;
+       color:#1a8cff;
+    }
+    input:-webkit-autofill {
+        -webkit-box-shadow:0 0 0 50px black inset; /* Change the color to your own background color */
+        -webkit-text-fill-color: #1a8cff;
+    }
+    input:-webkit-autofill:focus {
+        -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px white inset;
+        -webkit-text-fill-color: #1a8cff;
+    }
+    #user{
+        width: 150px;
+        height:150px;
+        border-radius:50%;
+        position: absolute;
+        top: 0px;
+        left:100px;
+        margin-top:5px;
+        align-self: center;
+        
+    }
+    
+}

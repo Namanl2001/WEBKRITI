@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<meta charset="utf-8"  content="width=device-width" name="viewport">
+<link rel="stylesheet" type="text/css" href="/public/signUp.css">
+</head>
+<body>
+	<% var d,e;%>
+	<% if(d===1){%>
+		<script>alert("Enter date");</script>
+		<%}%>
+
+	<% if(d==2){%>
+		<script>alert("Enter correct date");</script>
+		<%}%>
+
+		<% if(d==3){%>
+			<script>alert("Passwords do not match");</script>
+			<%}%>
+
+			<% if(d==4){%>
+				<script>alert("Email/phone already exists");</script>
+				<%}%>
+				<% if(d==5){%>
+					<script>alert("Please enter all the fields");</script>
+					<%}%>
+
+	<div class="registrationbox">
+		<!-- <div ><img src="photos/user.png" id="user">	 -->
+	<h1 style="text-align:center;font-family:cursive;@media(max-width:768px){font-size:25px}";>SIGN UP</h1>
+	<%= typeof errors != 'undefined' ? JSON.stringify(errors) : '' %>
+	<form method="post" action="/users/signUp" id="myform" >
+			<label for="fullname" style="@media (max-width: width 768px;){font-size: 15px;}">Full name :</label>
+			<input id="fullname"style="@media (max-width: width 768px;){font-size: 15px;}"type="text" name="name" placeholder="Full Name"  autocomplete= "off"
+			value="<%= typeof name != 'undefined' ? name : '' %>" required autofocus><br>
+			<br>
+		<label style="@media (max-width: width 768px;){font-size: 15px;}" >
+			DoB : 
+			<select class="size1"  aria-label="Day" name="day" id="day" title="Day"><option value="0"selected="1">Day</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19" >19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+
+			<select class="size1" aria-label="Month" name="month" id="month" title="Month"><option value="0"selected="1">Month</option><option value="1">Jan</option><option value="2" >Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sept</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select>
+			
+			<select class="size1" aria-label="Year" name="year" id="year" title="Year"><option value="0">Year</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option></select>
+		 </label>
+		
+		<div><br>
+		<label for="gender" style="@media (max-width: width 768px;){font-size: 15px;}">Gender : </label>
+		<input  style="@media (max-width: width 768px;){font-size: 15px;}"type="radio" name="gender" value="M" checked><span class="radio">Male</span>
+		<input style="@media (max-width: width 768px;){font-size: 15px;}"type="radio"  name="gender" value="F" required> <span class="radio">Female</span>
+		<div>
+		
+
+		</div><br>
+		<label for="phone" style="@media (max-width: width 768px;){font-size: 15px;}">Contact No. : </label>
+		<input type="text" style="@media (max-width: width 768px;){font-size: 15px;}" name="phone" pattern="[0-9]{10}" title="10 digit Contact No." placeholder="0123456789" autocomplete= "off" required><br><br>
+		<label for="email" style="@media (max-width: width 768px;){font-size: 15px;}">Email id: </label>
+		<input id="email" type="email" style="@media (max-width: width 768px;){font-size: 15px;}" name="email" placeholder="abcd@gmail.com" autocomplete= "off" required><br><br>
+		<label for="username" style="@media (max-width: width 768px;){font-size: 15px;}">Username : </label>
+		<input id="username"type="text" name="usernm" style="@media (max-width: width 768px;){font-size: 15px;}"placeholder="Username" autocomplete= "off" required><br><br>
+
+		 <label for="pass" style="@media (max-width: width 768px;){font-size: 15px;}">Password : </label>
+        <input id="pass" style="@media (max-width: width 768px;){font-size: 15px;}"type="password" name="pass1" placeholder="Aa123456" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain (A-Z),(a-z),(0-9); min. 8 characters" required>
+        <br><br>
+
+		<label for="passch" style="@media (max-width: width 768px;){font-size: 15px;}">Confirm Password : </label>
+		<input id="passch" style="@media (max-width: width 768px;){font-size: 15px;}"type="password" name="pass2" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}" required title="Enter password ">
+		<br><br>
+
+		<input class="cb"type="checkbox" name="agree" required>
+		<label id="tnc" for="tnc">Keep your User_name and password private.</label><br><br>
+		<div size="20px" id="mod">
+        <div id="but">
+		<input  style="@media (max-width: width 768px;){font-size: 15px;}" type="submit" name="submit" class="size" >
+		<input type="reset" class="size" ></div></div>
+	</form>
+	</div>
+</body>
+</html>

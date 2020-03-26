@@ -1,0 +1,21 @@
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+body{
+  background:whitesmoke;
+  background-position: fixed;
+  background-size: cover;
+  height: 100%;
+  
+}
+h3,h2,h1,b{
+  font-family: cursive;
+}

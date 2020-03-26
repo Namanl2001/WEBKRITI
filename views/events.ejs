@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            EVENTS
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Audiowide|Lobster+Two|Nosifer|Oleo+Script|Permanent+Marker&display=swap" rel="stylesheet">      
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Barlow+Condensed|Monoton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+        <meta charset="utf-8" name="viewport"  content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="/public/events.css">
+    </head>
+    <body>
+      <% var e; %>
+      <% var events; %>
+      
+       
+        <div class="container">
+            <div id="heading"><h1>EVENTS</h1></div>
+            <div id="it1"><img src="/photos/bigstock-Programming-Web-Banner-Best-P-258081862.jpg"  class="image"><h2>TECHNOVATION</h2><div  class="overlay1"> <div class="text"> Are you a dumbfounding creator and have astounding ideas? If yes then, TIC is the place where you can reveal all your passions.<br><br></div><a href="/event/technovation" class="bitton" id="button"><button class="size"><span>EXPLORE</span></button></a></div></div>
+            <div id="it2"><img src="/photos/robogames_16x9-3.jpg"class="image"><h2>ROBOWARS</h2><div class="overlay2"> <div class="text"> The ultimate test of engineering excellence, teamwork, strategy, and gaming is here! Infotsav brings to you its flagship event, Robowars.<br><br></div><a href="/event/robowars" class="bitton" id="button"><button class="size"><span>EXPLORE</span></button></a></div></div>
+            <div id="it3"><img src="/photos/41862409-global-people-discussion-meeting-creativity-ideas-concept.jpg" class="image"><h2>ENTREPRENURSHIP</h2><div id="ol3"  class="overlay3"> <div class="text1"> The event “Upstart Pioneer” provides the platform where your startup can find its foundation. Apart from the capital, you can attract the attention and advice of the panel.<br><br></div><a href="/event/entrepreneurial_event" class="bitton" id="button"><button class="size"><span>EXPLORE</span> </button></a></div></div>
+            <div id="it4"><img src="/photos/artificial-intelligence-future-of-programming.jpg" class="image"><h2>SOFTWARE CORNER</h2><div id="ol4"  class="overlay4"> <div class="text">  IOPC is the annual International Online Programming Contest of IIIT Gwalior, organized by the Infotsav team.<br><br></div><a href="/event/software_corner" class="bitton" id="button"><button class="size"><span>EXPLORE</span></button></a></div></div>
+            <div  id="it5"><img src="/photos/1409486.jpg" class="image"><h2>GAMIACS</h2><div id="ol5"
+                 class="overlay5"> <div class="text"> For the First Time, Infotsav Presents Pubg Mobile Pan Mania Competitions for Participants.Think you have what it takes? <br><br></div><a href="/event/gamiacs" class="bitton" id="button"><button class="size"><span>EXPLORE</span></button></a></div></div>
+        </div>
+        <div id="menu">
+          <input type="checkbox" id="check">
+          <label for="check">
+            <img src="/photos/menu.png" id="btn">
+            <img src="/photos/cancel.png" id="cancel">
+          </label>
+          <div class="sidebar">
+              <header> INFOTSAV'20</header>
+            
+            <ul>
+              
+              <li><a href="home"><img src="/photos/home (1).png" class="icon">&nbsp &nbsp Home</a></li>
+              <li><a href="sponsors"><img src="/photos/bank.png" class="icon">&nbsp &nbsp Sponsors</a></li>
+              <li><a href="events"><img src="/photos/checklist.png" class="icon">&nbsp &nbsp Events</a></li>
+              <li><a href="About"><img src="/photos/faq.png" class="icon">&nbsp &nbsp About Us</a></li>
+              
+              <li><a href="contact"><img src="/photos/email.png" class="icon">&nbsp &nbsp Contact Us</a></li>
+              <%if(e==0) {%><li><a href="/users/login"><img src="/photos/add-user.png" class="icon">&nbsp &nbsp Login/Signup</a></li><%}%>
+              <%if(e==1) {%> <li><a href="/users/delete"><img src="/photos/account.png" class="icon">&nbsp &nbsp Delete account</a></li>
+                <li><a href="/users/logout"><img src="/photos/logout.png" class="icon">&nbsp &nbsp Log out</a></li>
+              <%}%>
+            </ul>
+          </div>
+        </div>
+        <% if(e==1){ %>
+          <div class="eventlist">
+           <div class="flag"> <p > <strong>You have registered for: <%= events.length %> event(s)</p> </div>
+         <% for(var i = 0;i < events.length;i++) { %>
+                <% if(events[i].event_id === 'a') { %> <p ><em> Entrepreneurial Events</em>  
+                  <button  class="button"> <a href="/users/event_cancel/a" class="dec" >Cancel</a></button></p> <% } %>
+                <% if(events[i].event_id === 'b') { %> <p > <em>Gamiacs &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </em> 
+                  <button  class="button"> <a href="/users/event_cancel/b" class="dec" >Cancel</a></button></p> <% } %>
+                <% if(events[i].event_id === 'c') { %> <p><em> Robowars &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </em>
+                 <button  class="button"> <a href="/users/event_cancel/c"class="dec" >Cancel</a></button></p> <% } %>
+                <% if(events[i].event_id === 'd') { %> <p><em> Software Corner &nbsp &nbsp &nbsp &nbsp &nbsp </em>
+                  <button  class="button"> <a href="/users/event_cancel/d" class="dec" >Cancel</a></button></p> <% } %>
+                <% if(events[i].event_id === 'e') { %> <p><em> Technovation &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp  </em>
+                  <button  class="button"> <a href="/users/event_cancel/e" class="dec" >Cancel</a></button></p> <% } %>
+                 <% } %> </div>  <% } %>
+              
+   
+    </body>
+    </html>
+

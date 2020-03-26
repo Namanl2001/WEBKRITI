@@ -1,0 +1,228 @@
+
+body{
+  background: url('photos/3525580.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  font-family: sans-serif;
+  animation: mymove 3s ;
+}
+hr.style1{ 
+  width: 500px;
+  float: center;
+  border: 0; 
+  height: 2px; 
+  background-image: -webkit-linear-gradient(left,rgba(0,0,0,0.7), white,rgba(0,0,0,0.7));
+  background-image: -moz-linear-gradient(left, rgba(0,0,0,0.7), white,rgba(0,0,0,0.7));
+  background-image: -ms-linear-gradient(left, rgba(0,0,0,0.7), white,rgba(0,0,0,0.7));
+  background-image: -o-linear-gradient(left, rgba(0,0,0,0.7), white,rgba(0,0,0,0.7)); 
+}
+@keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  h4{
+    color: whitesmoke;
+  }
+  a{
+    text-decoration: none;
+  }
+  .size{
+    border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 12px 35px;
+  outline: none;
+  color: white;
+  border-radius: 35px;
+  transition: 0.25s;
+  cursor: pointer;
+   font-size:15pt;
+   letter-spacing: 1.5px;
+   font-weight: 150;
+
+}
+.size:hover{
+  background: #2ecc71;
+}
+
+
+.box{
+  width: 500px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /*background:lightsteelblue;*/
+  background:rgba(0,0,0,0.7);
+  text-align: center;
+  border-radius: 80px;
+  border-width: 5px;
+  border-style: double;
+  border-color:rgb(18, 66, 224); 
+  
+}
+
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 300px;
+  outline: none;
+  color: #1a8cff;
+  border-radius: 24px;
+  transition: 0.30s;
+  font-size:15pt;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 450px;
+  border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 35px;
+  transition: 0.25s;
+  cursor: pointer;
+   font-size:15pt;
+}
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+.fp{
+  color: antiquewhite;text-decoration:none;
+  letter-spacing: 2px;
+  
+}
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+.sp{letter-spacing: 2px;}
+
+
+@media (max-width:768px){
+body{
+  background: url('photos/3525580.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto auto;
+  height: 100%;
+  font-family: sans-serif;
+  animation: mymove 4s ;
+}
+@keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.box{
+  width: 280px;
+  height: auto;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /*background:lightsteelblue;*/
+  background:rgba(0,0,0,0.7);
+  text-align: center;
+  border-radius: 80px;
+  border-width: 5px;
+  border-style: double;
+  border-color:rgb(18, 66, 224); 
+  
+}
+
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 25px;
+}
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  height: 15px;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 180px;
+  outline: none;
+  color: #1a8cff;
+  border-radius: 24px;
+  transition: 0.30s;
+  font-size:15pt;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 230px;
+  height: 15px;
+  border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 35px;
+  transition: 0.25s;
+  cursor: pointer;
+   font-size:15pt;
+}
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+.fp{
+  color: antiquewhite;text-decoration:none;
+  
+}
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+hr.style1{width:300px;}
+}

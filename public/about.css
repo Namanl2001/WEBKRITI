@@ -1,0 +1,83 @@
+body{
+    background-attachment: fixed;
+    background:url("photos/bulb.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+#content{
+    margin-top: 6vw;
+    margin-left: 18vw;
+    margin-right: 18vw;
+}
+h1{
+    padding-left: 20vw;
+    padding-right: 20vw;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: cursive;
+    color: black;
+}
+h2{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: cursive;
+    color: black;
+}
+#b{
+    color: black;
+}
+#h{
+    color: white;
+    letter-spacing: 2.5px;
+}
+p{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: cursive;
+    color: white;
+    letter-spacing: 2px;
+}
+#contacts{
+    margin-left: 75vw;
+    margin-bottom: 2vw;
+    position: relative;
+    }
+    .na{
+        margin: 0 15px;
+        
+      }
+
+@media screen and (max-width:1270px){
+		h1{
+    padding-left: 0%;
+    font-size: 53px;
+    /*padding-right: 5vw;*/
+}
+#content{
+    margin-left: 5vw;
+    margin-right: 2vw;
+}
+.bl{color:black; font-weight: 900px;}
+#contacts{
+    margin-left: 1vw;
+    margin-bottom: 15vw;
+    position: relative;
+    }
+    h2{
+    font-size: 30px;}
+}
