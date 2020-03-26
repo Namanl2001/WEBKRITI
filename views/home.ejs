@@ -16,10 +16,13 @@
 	<link rel="stylesheet" type="text/css" href="/public/home.css">
 </head>
 <body>
-	<% var f ; %>
+	<% var f,d ; %>
 	<% if(f==1) {%>
 		<div id="hello"><p >HELLO !! <%= name[0].full_name %> </p></div>   <%}%>
 
+		<% if(d==1){%>
+			<script>alert("Account deleted successfully !!");</script>
+			<%}%>
 
 	<div id="bo">
 

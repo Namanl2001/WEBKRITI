@@ -9,8 +9,9 @@ let user
 router.get('/', (req, res) => {
   if (!req.session.user){
     res.status(401).render('home', {
-      user: req.session.user,f:0
+      user: req.session.user,f:0,d:d
     });
+    d=0;
   }
   else { 
     res.status(200).redirect('/users/welcome');  }
@@ -243,6 +244,7 @@ router.post("/update_password", (req, res) => {
     else {res.status(401).redirect("/users/login"); }
   });
   
+  var d=0;
   router.get("/event_cancel/:id", (req, res) => {
     if (req.session.user) {
       const event_id = (req.params.id);
@@ -299,7 +301,8 @@ router.post("/update_password", (req, res) => {
             if (err) res.status(500).send(err)
             else {
               req.session.destroy(() => {
-                res.status(200).redirect('/home?Account+deleted+Successfully');
+                d=1;
+                res.status(200).redirect('/users/?Account+deleted+Successfully');
               })
             }
           },
