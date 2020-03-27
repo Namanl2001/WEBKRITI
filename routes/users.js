@@ -118,7 +118,9 @@ router.post("/login", (req, res) => {
         if (result) {
           req.session.user = user;
           if(c===0) res.redirect("/users/welcome?login?successfull");
-          else res.redirect("/users/register?login+successfull?Register+here");
+          else { c=0;
+            res.redirect("/users/register?login+successfull?Register+here");
+          }
           // res.redirect("/home?login?successfull");
         } else {
           res.status(400).render('login', { l:1, email });

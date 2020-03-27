@@ -63,8 +63,6 @@ body{
     font-family: 'Bungee Inline', cursive;
     box-sizing: border-box;
     width: fit-content;
-    /* border: 5px double royalblue; */
-    /* border-radius: 50px; */
     text-align: center;
     top: 300px;
   
@@ -85,8 +83,6 @@ body{
     font-family:cursive;
     box-sizing: border-box;
     width: fit-content;
-    /* border: 5px double royalblue; */
-    /* border-radius: 50px; */
     top: 300px;
   }
   
@@ -117,10 +113,6 @@ body{
   .ul2 {
     list-style-type: none;
     
-    /* padding: 10px; */
-    /* width: 00px; */
-    /* background-color: #f1f1f1; */
-    /* margin: 20px; */
   }
   
    
@@ -133,9 +125,6 @@ body{
     text-decoration: wavy;
     font-size: x-large;
     font-family: cursive;
-    /* margin: 10px 20px; */
-  
-    
   }
   
   
@@ -231,9 +220,6 @@ body{
      padding-left: 78px;
     transition: all 0.75s ease;
   }
-  /* .sidebar ul a .im{
-    margin-right: 16px;
-  } */
   #check{
     display: none;
   }
@@ -283,20 +269,8 @@ body{
     width: 40px;
     height: 40px;
   
-  
-    /*position: absolute;*/
   }
-  /* section{
-    background: url(bg.jpeg) no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    transition: all .5s;
-  } */
-  /* .im
-  {
-    margin: 20px;
-  } */
+  
   #intro
   { 
     top: 0;
@@ -305,7 +279,9 @@ body{
     font-size: 12px;
     height: 100%;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
       background-size: 400% 400%;
+
       -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
             
@@ -316,18 +292,14 @@ body{
   }
   .hy
   {
-    
     position: absolute;
     color: #0357d6;
     transform: translate(50%,25%);
     
     text-align: center;
-    /* display: none; */
-    /* text-decoration: wavy;
-    text-decoration-color: #0066ff; */
     animation: cc 4s infinite ;
-  
   }
+  
   @keyframes cc{
     from {color:black; }
     to {color:white;}

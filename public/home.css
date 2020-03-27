@@ -67,8 +67,6 @@ position: absolute;
 #infotsav span:nth-child(1)
 {
   animation-delay: 0s ;
-  /* text-shadow:  */
-    /* 0 0 10px #00b3ff */
 }
 #infotsav span:nth-child(2)
 {
@@ -135,6 +133,123 @@ position: absolute;
   }
 }
 
+#date
+{
+  font-size: 50px;
+  color:white;
+  font-family: 'Lobster', cursive;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  padding-left: 30%;
+  margin-top: -80px;
+  border: 5px;
+  animation: date 4s infinite;
+}
+@keyframes date{
+  
+  0%   {color: white;}
+  25%  {color: yellow;}
+  50%  {color: rgb(11, 155, 165);}
+  100% {color: rgb(9, 204, 9);}
+
+}
+
+.sidebar {
+  position: fixed;
+  left: -350px;
+  width: 350px;
+  height: 100%;
+  top: 0;
+  background: rgba(46,122,120,0.6);
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  font-family: 'Monoton', cursive;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: black;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  font-family: 'Righteous', cursive;
+  width: 100%;
+  line-height: 50px;
+  font-size: 28px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+  padding-top: 5px;
+  display: flex;
+}
+.sidebar ul :hover
+{
+  color: #000000;
+  /* background: #64c24c; */
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+ul li:hover a{
+   padding-left: 78px;
+  transition: all 0.75s ease;
+}
+
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  /* background: #042331; */
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+  width: 40px;
+  height: 40px;
+}
+label #cancel{
+  z-index: 1111;
+  left: -280px;
+  top: 14px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+  width: 40px;
+  height: 40px;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 350px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 280px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+.icon
+{
+  width: 40px;
+  height: 40px;
+}
+
 .header{
   font-size: 6.7em;
   color:white;
@@ -157,32 +272,6 @@ position: absolute;
   animation: mymove 5s;
   border: 5px;
   margin: 20px;
-}
-#date
-{
-  font-size: 50px;
-  color:white;
-  font-family: 'Lobster', cursive;
-  box-sizing: border-box;
-  width: 100%;
-  /* border: 5px double royalblue; */
-  /* border-radius: 50px; */
-  ;
-  position: relative;
-  padding-left: 30%;
-  margin-top: -80px;
-  border: 5px;
-  /* text-align: right; */
-  /* align-self: unset; */
-  animation: date 4s infinite;
-}
-@keyframes date{
-  
-  0%   {color: white;}
-  25%  {color: yellow;}
-  50%  {color: rgb(11, 155, 165);}
-  100% {color: rgb(9, 204, 9);}
-
 }
 
 
@@ -273,105 +362,7 @@ body::-webkit-scrollbar-thumb {
 body {
   font-family: 'Roboto', sans-serif;
 }
-.sidebar {
-  position: fixed;
-  left: -350px;
-  width: 350px;
-  height: 100%;
-  top: 0;
-  background: rgba(46,122,120,0.6);
-  transition: all .5s ease;
-}
-.sidebar header {
-  font-size: 22px;
-  font-family: 'Monoton', cursive;
-  color: white;
-  line-height: 70px;
-  text-align: center;
-  background: black;
-  user-select: none;
-}
-.sidebar ul a{
-  display: block;
-  height: 100%;
-  font-family: 'Righteous', cursive;
-  width: 100%;
-  line-height: 50px;
-  font-size: 28px;
-  color: white;
-  padding-left: 40px;
-  box-sizing: border-box;
-  border-bottom: 1px solid black;
-  border-top: 1px solid rgba(255,255,255,.1);
-  transition: .4s;
-  padding-top: 5px;
-  display: flex;
-}
-.sidebar ul :hover
-{
-  color: #000000;
-  /* background: #64c24c; */
-  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-}
-ul li:hover a{
-   padding-left: 78px;
-  transition: all 0.75s ease;
-}
-/* .sidebar ul a .im{
-  margin-right: 16px;
-} */
-#check{
-  display: none;
-}
-label #btn,label #cancel{
-  position: absolute;
-  /* background: #042331; */
-  border-radius: 3px;
-  cursor: pointer;
-}
-label #btn{
-  left: 40px;
-  top: 25px;
-  font-size: 35px;
-  color: white;
-  padding: 6px 12px;
-  transition: all .5s;
-  width: 40px;
-  height: 40px;
-}
-label #cancel{
-  z-index: 1111;
-  left: -280px;
-  top: 14px;
-  font-size: 30px;
-  color: #0a5275;
-  padding: 4px 9px;
-  transition: all .5s ease;
-  width: 40px;
-  height: 40px;
-}
-#check:checked ~ .sidebar{
-  left: 0;
-}
-#check:checked ~ label #btn{
-  left: 350px;
-  opacity: 0;
-  pointer-events: none;
-}
-#check:checked ~ label #cancel{
-  left: 280px;
-}
-#check:checked ~ section{
-  margin-left: 250px;
-}
-.icon
-{
-  width: 40px;
-  height: 40px;
 
-
-  /*position: absolute;*/
-}
 section{
   background: url(bg.jpeg) no-repeat;
   background-position: center;
