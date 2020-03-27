@@ -65,12 +65,13 @@
 
 <div id="intro">
 	<div class="hy"><span > INFOTSAV<br>2K20</span></div>
-	<div id="xs"><a href="javascript:setTimeout(()=>{window.location = '/home' },1800);"><button class="size" onclick="myh()">EXPLORE</button></a></div>
+	<div id="xs"><button class="size" onclick="myh()">EXPLORE</button></div>
 </div>
 
 <script>
 	      
       	  const myh=()=>{
+			setTimeout(()=>{window.location = '/home' },1800);
 		  const intro=document.getElementById("intro");
 		  intro.style.top="-100%";
 		  
