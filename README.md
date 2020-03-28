@@ -130,7 +130,7 @@
     
 ## SCREENSHOTS
 
-https://drive.google.com/file/d/1TcQSXvyRFs3m-Ohha1MuRgp7q2HXScpf/view?usp=sharing
+https://drive.google.com/drive/folders/1SNfPZkHeKqT-1KLvQC_5rv3lE-BfwEiM?usp=sharing
 
 ## VIDEO
 https://drive.google.com/file/d/1xlJ6zNeSsw5-_T5cxqx4Gill72-E2ySX/view?usp=sharing
