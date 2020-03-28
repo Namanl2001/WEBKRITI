@@ -129,8 +129,13 @@
     
     
 ## SCREENSHOTS
+
+https://drive.google.com/file/d/1TcQSXvyRFs3m-Ohha1MuRgp7q2HXScpf/view?usp=sharing
+
 ## VIDEO
+https://drive.google.com/file/d/1xlJ6zNeSsw5-_T5cxqx4Gill72-E2ySX/view?usp=sharing
+
 ## HOSTED WEBSITE LINK
-/
+
 https://infotsav-20.herokuapp.com/
 
