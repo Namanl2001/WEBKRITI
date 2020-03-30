@@ -876,6 +876,7 @@ body {
   
   
   .sidebar {
+    z-index: 9;
     position: fixed;
     left: -60%;
      padding: 0;
@@ -913,7 +914,7 @@ body {
     font-family: 'Righteous', cursive;
     width: 100%;
     line-height: 100px;
-    font-size: 38px;
+    font-size: 30px;
     color: white;
     padding-left: 40px;
     box-sizing: border-box;
@@ -983,7 +984,19 @@ body {
     /*position: absolute;*/
   }
   
-  
+  .eventlist{
+    bottom: -420%;
+    font-size: 20pt;
+    color:white;
+    font-weight: 500;
+    margin-left: 10%;
+    margin-right: 10;
+    margin-bottom: 22%;
+    right: -85%;
+    letter-spacing: 2px;
+    position:absolute;
+  }
+  .flag{font-size: 25pt;}
   
   body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
