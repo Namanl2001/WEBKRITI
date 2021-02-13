@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+// const mysql = require("mysql");
 
 // const mySqlConnection = mysql.createConnection({
 //   host: "localhost",
@@ -6,21 +6,21 @@ const mysql = require('mysql');
 //   password: "12345",
 //   database: "webweek",
 // });
-const mySqlConnection = mysql.createConnection({
+// const mySqlConnection = mysql.createConnection({
 
-  host: "sql12.freemysqlhosting.net", //Or whatever you received in your mail
-  
-  user: "sql12329383",
-  
-  password: "ZAZfp3rbf3",
-  
-  database: "sql12329383"
-  
-  });
+//   host: "sql12.freemysqlhosting.net", //Or whatever you received in your mail
 
-mySqlConnection.connect((err) => {
-  if (err) throw err;
-  console.log("Database Connected!");
-});
+//   user: "",
 
-module.exports = mySqlConnection;
+//   password: "",
+
+//   database: ""
+
+//   });
+
+// mySqlConnection.connect((err) => {
+//   if (err) throw err;
+//   console.log("Database Connected!");
+// });
+
+// module.exports = mySqlConnection;
